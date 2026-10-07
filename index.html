@@ -1,0 +1,598 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Every Half Coffee Roasters - Destination Experience | Hệ Thống Cửa Hàng</title>
+<!-- Google Fonts: Space Grotesk & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#111111',
+              dark: '#1C1C1E',
+              gray: '#6E6E73',
+              lightGray: '#F5F5F7',
+              border: '#E5E5EA',
+              accent: '#0A84FF',
+              badge: '#2C2C2E',
+            }
+          },
+          letterSpacing: {
+            tightest: '-0.035em',
+            widestPlus: '0.18em',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAFAFA;
+      color: #111111;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .font-space {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  </style>
+<style data-purpose="micro-interactions">
+    .card-zoom-container {
+      overflow: hidden;
+    }
+    .card-zoom-container img {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-zoom-container:hover img {
+      transform: scale(1.04);
+    }
+    .subtle-underline {
+      position: relative;
+    }
+    .subtle-underline::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      bottom: -4px;
+      left: 0;
+      background-color: #111111;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #D1D1D6;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFA] text-brand-black flex flex-col min-h-screen">
+<!-- BEGIN: TopHeader -->
+<header class="sticky top-0 z-50 bg-[#FAFAFA]/95 backdrop-blur-md border-b border-brand-border">
+<!-- Breadcrumb minimal top bar -->
+
+<!-- Main Navigation Bar -->
+<div class="max-w-[1780px] mx-auto px-6 lg:px-16 h-20 flex items-center justify-between">
+<!-- Left Navigation Items -->
+<nav aria-label="Main Navigation" class="hidden lg:flex items-center space-x-10 text-[12px] font-semibold tracking-widest uppercase">
+<a class="text-brand-gray hover:text-black transition-colors" href="#">ABOUT US</a>
+<a class="text-brand-gray hover:text-black transition-colors" href="#">OUR PRODUCTS</a>
+<a class="text-black font-bold subtle-underline" href="#">VISIT US</a>
+<a class="text-brand-gray hover:text-black transition-colors" href="#">JOURNAL</a>
+</nav>
+<!-- Center Geometric Brand Logo 'EV HA' -->
+<div class="flex justify-center flex-1 lg:flex-none">
+<a aria-label="Every Half Home" class="group flex flex-col items-center justify-center p-1" href="#">
+<!-- Geometric Hourglass Typography Logo -->
+<div class="border-[2.5px] border-black p-1 w-11 h-11 flex flex-col justify-between items-center bg-white shadow-sm group-hover:bg-black group-hover:text-white transition-colors duration-200">
+<span class="font-space font-extrabold text-[12px] leading-none tracking-tighter">EV</span>
+<div class="w-full h-[1.5px] bg-black group-hover:bg-white my-0.5"></div>
+<span class="font-space font-extrabold text-[12px] leading-none tracking-tighter">HA</span>
+</div>
+</a>
+</div>
+<!-- Right Utility Navigation Items -->
+<div class="flex items-center space-x-6 lg:space-x-8 text-[12px] font-semibold tracking-widest uppercase">
+<a class="hidden sm:inline-block text-brand-gray hover:text-black transition-colors" href="#">JOBS</a>
+<a class="text-brand-gray hover:text-black transition-colors" href="#">SIGN UP / LOGIN</a>
+<div class="hidden sm:flex items-center text-brand-gray text-[11px] font-medium border-l border-r border-brand-border px-3 space-x-1.5">
+<span class="text-black font-bold">VN</span>
+<span class="">/</span>
+<span class="hover:text-black cursor-pointer">EN</span>
+</div>
+<a class="flex items-center space-x-2 text-black hover:opacity-75 transition-opacity" href="#">
+<span class="">GIỎ HÀNG</span>
+<span class="inline-flex items-center justify-center bg-black text-white text-[10px] w-5 h-5 rounded-full font-mono">0</span>
+</a>
+</div>
+</div><div class="border-t border-brand-border bg-white/95"><div class="max-w-[1780px] mx-auto px-6 lg:px-16 py-2.5 flex items-center space-x-2 text-[11px] font-mono tracking-wider uppercase text-neutral-500"><a href="#" class="hover:text-black transition-colors">Trang chủ</a><span class="text-neutral-400">/</span><span class="text-black font-medium">Hệ thống cửa hàng (Visit Us)</span></div></div>
+</header>
+<!-- END: TopHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow">
+<!-- BEGIN: HeroBannerSection -->
+<section class="max-w-[1780px] mx-auto px-6 lg:px-16 pt-10 pb-16 lg:pt-14 lg:pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-5 space-y-7 pr-0 lg:pr-6">
+
+<h1 class="font-space text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tightest leading-[1.12] text-brand-black">
+            Khám Phá Không Gian Cà Phê Đặc Sản – Nơi Mỗi Góc Nho Nhỏ Kể Một Câu Chuyện.
+          </h1>
+<p class="text-brand-gray text-sm sm:text-base leading-relaxed font-normal">
+            Từ không gian sân vườn thoáng đãng đến những xưởng rang ấm cúng. Tìm cửa hàng Every Half có thiết kế phù hợp nhất với trải nghiệm thưởng thức và kết nối của bạn hôm nay.
+          </p>
+<!-- Interactive Action Buttons -->
+<div class="pt-2 flex flex-wrap gap-4 items-center">
+<a class="inline-flex items-center justify-center px-7 py-3.5 bg-brand-black text-white text-xs font-semibold tracking-widest uppercase hover:bg-neutral-800 transition-all shadow-sm" href="#store-locator">
+              Tìm cửa hàng gần bạn
+              <svg class="ml-2.5 w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="inline-flex items-center justify-center px-7 py-3.5 border border-brand-black text-brand-black text-xs font-semibold tracking-widest uppercase hover:bg-black hover:text-white transition-all" href="#store-cards">
+              Khám phá không gian
+            </a>
+</div>
+<!-- Feature Highlights Mini Metric -->
+<div class="grid grid-cols-3 gap-6 pt-6 border-t border-brand-border text-left">
+<div>
+<span class="block font-space text-2xl font-bold text-black">43+</span>
+<span class="text-[11px] text-brand-gray uppercase tracking-wider">Cửa Hàng</span>
+</div>
+<div>
+<span class="block font-space text-2xl font-bold text-black">04</span>
+<span class="text-[11px] text-brand-gray uppercase tracking-wider">Thành Phố</span>
+</div>
+<div>
+<span class="block font-space text-2xl font-bold text-black">100%</span>
+<span class="text-[11px] text-brand-gray uppercase tracking-wider">Rang Mộc Thủ Công</span>
+</div>
+</div>
+</div>
+<!-- Hero Primary Visual Showcase -->
+<div class="lg:col-span-7">
+<div class="relative bg-white p-3 lg:p-4 border border-brand-border shadow-sm">
+<div class="relative aspect-[16/10] overflow-hidden bg-neutral-100">
+<img alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt Architecture" class="w-full h-full object-cover object-center filter saturate-[0.98] contrast-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB37yWj81rnv75wRjiVvXHiK1jh9wdktq2EwfF-p5EDkusBfJsGJ1MnmF0pcBWBHQAA8z-3YO3oD2GW4ZBfLEH5xre60QfV0oDBD0-EXWVAr8l37LW6mII5ahW3EVoy19XojEBIzsT1GeQ1LJuphOG4zrl4r1ts5rNOtCxlPIBWtckic-59KwpR6F1Vmlf8dDK7hGD3QYOEcAnF-QKcWQShqnH-YD4zKKjSdI9HG59xa0oxCoF6oe5Z">
+<div class="absolute top-4 left-4 bg-black/85 text-white text-[11px] tracking-wider uppercase font-mono px-3 py-1.5 backdrop-blur-sm">
+                FLAGSHIP SPOTLIGHT • ĐÀ LẠT
+              </div>
+</div>
+<div class="pt-4 pb-2 px-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs">
+<div>
+<p class="font-bold text-sm font-space">Every Half Coffee Roasters - Lê Đại Hành (Đà Lạt)</p>
+<p class="text-brand-gray text-[11px] tracking-wide mt-0.5">19A Lê Đại Hành, Phường Xuân Hương, TP. Đà Lạt, Lâm Đồng</p>
+</div>
+<div class="flex items-center space-x-3 text-[11px] font-mono text-brand-gray shrink-0">
+<span class="">07:00 – 21:30</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="text-black font-semibold uppercase">Mở cửa đón khách</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroBannerSection -->
+<!-- BEGIN: SingleHorizontalFilterBar -->
+<section class="max-w-[1780px] mx-auto px-6 lg:px-16 py-8 border-y border-brand-border bg-white" id="store-locator">
+<div class="space-y-6">
+<!-- Filter Header Title & Clear Reset -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
+<div>
+<h2 class="font-space text-2xl font-bold tracking-tight text-brand-black">Hệ thống cửa hàng</h2>
+<p class="text-xs text-brand-gray mt-1">Chào mừng bạn đến với các cửa hàng của chúng tôi, nơi mỗi tách cà phê kể một câu chuyện và mỗi không gian được tạo ra để kết nối.</p>
+</div>
+<div class="flex items-center space-x-2 text-xs font-mono text-brand-gray">
+<span class="">Hiển thị kết quả: <strong class="text-black">43 địa điểm</strong></span>
+</div>
+</div>
+<!-- Horizontal Level 1: City Tabs Filter -->
+<div aria-label="Lọc theo thành phố" class="flex items-center overflow-x-auto space-x-2.5 pb-2 border-b border-gray-100 custom-scrollbar" role="tablist">
+<button class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-black text-white whitespace-nowrap shadow-sm">
+            Tất cả (43)
+          </button>
+<button class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
+            Thành phố Hồ Chí Minh (35)
+          </button>
+<button class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
+            Thành phố Hà Nội (5)
+          </button>
+<button class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
+            Thành phố Đà Nẵng (2)
+          </button>
+<button class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
+            Tỉnh Lâm Đồng (1)
+          </button>
+</div>
+<!-- Horizontal Level 2: Amenity & Vibe Tag Chips -->
+<div aria-label="Lọc theo tiện ích" class="flex items-center flex-wrap gap-2 pt-1 text-xs">
+<span class="text-[11px] font-mono uppercase tracking-widest text-brand-gray mr-2">BỘ LỌC TIỆN ÍCH:</span>
+<button class="px-3 py-1.5 border border-brand-black bg-black text-white text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Tất cả tiện ích
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Outdoor Space
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Pet-Friendly
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Co-working / Yên tĩnh
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Car Parking Nearby
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Roastery Lab
+          </button>
+<button class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
+            Free Motor Parking
+          </button>
+</div>
+</div>
+</section>
+<!-- END: SingleHorizontalFilterBar -->
+<!-- BEGIN: InspirationalVisualCards -->
+<section class="max-w-[1780px] mx-auto px-6 lg:px-16 py-16 lg:py-24">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-brand-border gap-4">
+<div>
+
+<h2 class="font-space text-2xl lg:text-3xl font-bold tracking-tightest mt-1">Góc Không Gian &amp; Câu Chuyện Trải Nghiệm</h2>
+</div>
+<p class="text-xs text-brand-gray max-w-md">Mỗi điểm đến Every Half là một thực thể kiến trúc gắn kết nhịp sống địa phương, thiên nhiên và nghệ thuật rang cà phê đương đại.</p>
+</div>
+<!-- 3 Columns Story Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Story Card 1 -->
+<article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
+<div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Đà Lạt - Lê Đại Hành" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvHWsb_5wCFBr1whsrxYKIs4O0wKmampRqoYKiqotJlCjySQMXBSF7wFQ2mWxPgIIMH7TrIOw9sREyXTAqV2bumXDslMT4K0Bm4HerDHtMeFOufk88e2S_4Eu3XOL5ucggyO3i8k5UJghzVKp_2dudsafSlLmDifImkoVkPz2yUgHjvv9W_B-dPAmC4UclC33z9av_ZP6Cck8gVVUj6-hFeAYkt73p2-tyvfuUSzFFhndUQcKydy5C">
+<div class="absolute bottom-3 left-3 flex gap-2">
+<span class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#OutdoorSpace</span>
+<span class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#DaLatVibe</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+<div>
+<h3 class="font-space text-lg font-bold group-hover:underline">Every Half Đà Lạt - Lê Đại Hành</h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                Không gian mở giữa đồi thông mộng mơ và kiến trúc M Village hiện đại. Nơi sương sớm Đà Lạt hòa quyện cùng hương thơm đậm sâu của các mẻ Arabica Cầu Đất nguyên bản.
+              </p>
+</div>
+<div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
+<span class="font-mono text-brand-gray text-[11px]">19A Lê Đại Hành, Lâm Đồng</span>
+<a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black" href="#card-1">Khám phá →</a>
+</div>
+</div>
+</article>
+<!-- Story Card 2 -->
+<article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
+<div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Hưng Gia - Tân Hưng" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2KDgYsg6qGom8SS0gwindjD-wYeMKJE1tUG7ND2aU1sRQdMBx9OwpqcDZTosp5HszmCbqT2VPwY32lueu64k4NKVj86D7ifhqrR8jTpnxW9Ksgtj33L5MmQBotDhCwNWjkj1mr_q193BlCgd8pazHqDAovqE6icyxUWsFyQwz_oGdXAAxfCHzdVioQbfaTd7dNjBX_GIe9VF84tx_fXSrc4sTMDzZegn8o5QoFg9ShxV0Xg3kN4r_">
+<div class="absolute bottom-3 left-3 flex gap-2">
+<span class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#PetFriendly</span>
+<span class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#GreenGarden</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+<div>
+<h3 class="font-space text-lg font-bold group-hover:underline">Every Half Hưng Gia &amp; Ngô Văn Năm</h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                Sân vườn rợp bóng mát, tràn ngập ánh sáng tự nhiên lý tưởng cho sáng cuối tuần cùng thú cưng. Kiến trúc kính rộng mở kéo thiên nhiên vào từng ngụm cold brew.
+              </p>
+</div>
+<div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
+<span class="font-mono text-brand-gray text-[11px]">Hưng Gia 4, Q.7, TP.HCM</span>
+<a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black" href="#card-2">Khám phá →</a>
+</div>
+</div>
+</article>
+<!-- Story Card 3 -->
+<article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
+<div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Beacon Phan Đăng Lưu" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDMFu0Wqdms_mGLCDf00GMWN03apDYjrRo8DOdJQSFRVm_NvS8E_CQdROvBqDXOBV37uFYM1H4u4PxHYyoUlCNQolTdS9SnaMGfOTRkK50A8f1wuAJKZaOOUhBBy89Tp8upoldgA8KM80HH6wNWz7p_STiXFpmO59e2IDBZQpmXEqIK75xU6yzzQ8pnKmS4Al8yQv_3Ye1KVQGXX9uwjYSUlBi_LVHC_-i88Bxc_E_dsMKbNWLIFGB">
+<div class="absolute bottom-3 left-3 flex gap-2">
+<span class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#RoasteryLab</span>
+<span class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#CraftCoffee</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+<div>
+<h3 class="font-space text-lg font-bold group-hover:underline">Minimalist Roastery - Beacon Phan Đăng Lưu</h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                Chiêm ngưỡng quy trình rang mẻ mộc mạc và thưởng thức mẻ cà phê mới nguyên bản cùng barista bậc thầy tại bàn bar tương tác trung tâm.
+              </p>
+</div>
+<div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
+<span class="font-mono text-brand-gray text-[11px]">14-16 Phan Đăng Lưu, Gia Định</span>
+<a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black" href="#card-3">Khám phá →</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- END: InspirationalVisualCards -->
+<!-- BEGIN: StoreCardsGridSection -->
+<section class="max-w-[1780px] mx-auto px-6 lg:px-16 pb-24" id="store-cards">
+<div class="flex items-center justify-between pb-6 border-b border-brand-border mb-8">
+<h2 class="font-space text-2xl font-bold tracking-tight text-brand-black">Danh Sách Cửa Hàng Trực Quan</h2>
+<div class="flex items-center space-x-2 text-xs font-mono">
+<span class="text-brand-gray">Sắp xếp:</span>
+<select class="border-0 bg-transparent py-0 pl-1 pr-6 text-xs font-bold focus:ring-0 cursor-pointer">
+<option>Gần bạn nhất</option>
+<option>Mới khai trương</option>
+<option>Có bãi đỗ ô tô</option>
+</select>
+</div>
+</div>
+<!-- Main Grid of Stores -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Store Card 1: Đà Lạt -->
+<article class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow" id="card-1">
+<div>
+<!-- Image with status badge and index -->
+<div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlPpkRUoDKTQMJsHj2_bQdOZ9_QeSjQSlcgxGxYTXq-QsJlNNLyloOqbcg-5gFAve0HGk7m48EQ-AbYn2vUETTHeDcUC6n8PQMoeOwE9KHnXz16UNxUbckGJ5tdJGzNuZjePK6RV5ksgMm8YeyyYAOSNMpoNMkCZw5fn9ppOsKc_N34I6ceFrKdSsjf7uYszvTg25ZKGHrnQUGv6qvu1wzU-5oD51mbv4iXXjp7pOXmia3P2FzmizY">
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
+                ĐANG MỞ CỬA • 07:00 - 21:30
+              </div>
+<div class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
+                1 / 4
+              </div>
+</div>
+<!-- Content Details -->
+<div class="p-6 space-y-4">
+<!-- Amenity Tag Pills -->
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Outdoor Space</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Pet-Friendly</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Free Motor Parking</span>
+</div>
+<!-- Name & Address -->
+<div>
+<h3 class="font-space text-lg font-bold uppercase leading-snug">
+                  Every Half Coffee Roasters - Lê Đại Hành - Đà Lạt
+                </h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                  19A Lê Đại Hành, Phường Xuân Hương, TP. Đà Lạt, Tỉnh Lâm Đồng
+                </p>
+<p class="text-[11px] font-mono text-neutral-500 mt-1">
+                  Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
+                </p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="p-6 pt-0 grid grid-cols-2 gap-3">
+<a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Chỉ đường
+            </a>
+<button class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors" type="button">
+              Xem không gian
+            </button>
+</div>
+</article>
+<!-- Store Card 2: Hưng Gia -->
+<article class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow" id="card-2">
+<div>
+<!-- Image with status badge and index -->
+<div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Coffee Roasters Hưng Gia" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8JAVubdHPPMMR-jRHD1Mhdky492Jrlip3xKzFMdEhuUC8O1IZPkaNGSwZW3EU4cLL5zYixkUfXdn3MBVyD6qsOk1yCoGcLMQCZuPcx1n4PezAd1yh-QtPprQScvlHf7bxQ63pR_s0q03KskpKMjpTQ6_Vg-CT1MuL8RrZwt7jyej3-Yh5F0ZoweclRi-2aZ2RlDEwZ-boTCOv4HiL1hEgU1aUbDvp6K0j7gcabcVtFIwwe521qjYo">
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
+                ĐANG MỞ CỬA • 07:00 - 21:30
+              </div>
+<div class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
+                1 / 3
+              </div>
+</div>
+<!-- Content Details -->
+<div class="p-6 space-y-4">
+<!-- Amenity Tag Pills -->
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Outdoor Space</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Car Parking Nearby</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Co-working Friendly</span>
+</div>
+<!-- Name & Address -->
+<div>
+<h3 class="font-space text-lg font-bold uppercase leading-snug">
+                  Every Half Coffee Roasters - Hưng Gia
+                </h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                  48 Đ. Nội Khu Hưng Gia 4, Tân Hưng, Quận 7, TP. Hồ Chí Minh
+                </p>
+<p class="text-[11px] font-mono text-neutral-500 mt-1">
+                  Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
+                </p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="p-6 pt-0 grid grid-cols-2 gap-3">
+<a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Chỉ đường
+            </a>
+<button class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors" type="button">
+              Xem không gian
+            </button>
+</div>
+</article>
+<!-- Store Card 3: Beacon Phan Đăng Lưu -->
+<article class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow" id="card-3">
+<div>
+<!-- Image with status badge and index -->
+<div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
+<img alt="Every Half Coffee Roasters Beacon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkA6qWGFStoi0IImbxaN-YfEJD5cHQ4WnbaPhqr-ogGm0lmi9LX8qXQ3xdEEnG1OIjOsLys4ASZ84RJ-uRomCC1xHGqOwloB8b6Xnwo5AjwVQY9Un-KRijT98YbDqsLXyDVvGQeQ3no3wTnTo1h9upOp9unmwQNvJrAQve7G-X_nTOqQwV8LZoyOWsw1erW_P-yQH7-Das6XzWBiiX84L5ZLZDmkbYMcGQ2E0-7mbCUwK5aTSTc0G6">
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
+                ĐANG MỞ CỬA • 07:00 - 21:30
+              </div>
+<div class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
+                1 / 5
+              </div>
+</div>
+<!-- Content Details -->
+<div class="p-6 space-y-4">
+<!-- Amenity Tag Pills -->
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Roastery Lab</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Air Conditioned</span>
+<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Free Motor Parking</span>
+</div>
+<!-- Name & Address -->
+<div>
+<h3 class="font-space text-lg font-bold uppercase leading-snug">
+                  Every Half Coffee Roasters - Beacon
+                </h3>
+<p class="text-xs text-brand-gray mt-2 leading-relaxed">
+                  14-16 Phan Đăng Lưu, Phường 6, Quận Bình Thạnh, TP. Hồ Chí Minh
+                </p>
+<p class="text-[11px] font-mono text-neutral-500 mt-1">
+                  Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
+                </p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="p-6 pt-0 grid grid-cols-2 gap-3">
+<a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Chỉ đường
+            </a>
+<button class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors" type="button">
+              Xem không gian
+            </button>
+</div>
+</article>
+</div>
+<!-- Pagination or Load More Minimalist Element -->
+<div class="mt-14 pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="text-xs text-brand-gray font-mono">Hiển thị 3 trên 43 cửa hàng đang hoạt động</span>
+<button class="px-8 py-3 border border-brand-black text-xs font-semibold tracking-widest uppercase hover:bg-black hover:text-white transition-colors">
+          Xem thêm 40 cửa hàng khác
+        </button>
+</div>
+</section>
+<!-- END: StoreCardsGridSection -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-white border-t border-brand-border pt-16 pb-12">
+<div class="max-w-[1780px] mx-auto px-6 lg:px-16">
+<!-- Upper Section: Logo and Links -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14">
+<!-- Large Geometric EH Brand Icon -->
+<div class="md:col-span-3">
+<div class="border-[4px] border-black p-2.5 w-20 h-20 flex flex-col justify-between items-center bg-white shadow-sm">
+<span class="font-space font-extrabold text-2xl leading-none tracking-tighter">EV</span>
+<div class="w-full h-[3px] bg-black my-1"></div>
+<span class="font-space font-extrabold text-2xl leading-none tracking-tighter">HA</span>
+</div>
+<p class="mt-6 text-xs text-brand-gray leading-relaxed max-w-xs">
+            Every Half Coffee Roasters tôn vinh hương vị mộc bản, kết nối cộng đồng yêu cà phê đặc sản thông qua kiến trúc tinh tế và trải nghiệm chân thực.
+          </p>
+</div>
+<!-- Links Columns Grid -->
+<div class="md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-[11px] tracking-wider uppercase">
+<!-- Column 1: ABOUT EVERYHALF -->
+<div class="space-y-3.5">
+<h4 class="font-bold text-black font-space tracking-widest text-xs">ABOUT EVERYHALF</h4>
+<ul class="space-y-2.5 text-brand-gray font-medium">
+<li class=""><a class="hover:text-black transition-colors" href="#">Sustainability</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">People in EH</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Our Stores</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">New Crop</a></li>
+</ul>
+</div>
+<!-- Column 2: PRODUCTS -->
+<div class="space-y-3.5">
+<h4 class="font-bold text-black font-space tracking-widest text-xs">PRODUCTS</h4>
+<ul class="space-y-2.5 text-brand-gray font-medium">
+<li class=""><a class="hover:text-black transition-colors" href="#">Our Coffee</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Merchandise</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Gift &amp; Bundles</a></li>
+</ul>
+</div>
+<!-- Column 3: JOURNAL -->
+<div class="space-y-3.5">
+<h4 class="font-bold text-black font-space tracking-widest text-xs">JOURNAL</h4>
+<ul class="space-y-2.5 text-brand-gray font-medium">
+<li class=""><a class="hover:text-black transition-colors" href="#">Coffee Info</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">News</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Process</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Brew Guide</a></li>
+</ul>
+</div>
+<!-- Column 4: POLICY -->
+<div class="space-y-3.5">
+<h4 class="font-bold text-black font-space tracking-widest text-xs">POLICY</h4>
+<ul class="space-y-2.5 text-brand-gray font-medium">
+<li class=""><a class="hover:text-black transition-colors" href="#">Hướng dẫn xoá tài khoản</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Điều khoản &amp; Điều kiện</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Bảo mật thông tin</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Phương thức thanh toán</a></li>
+</ul>
+</div>
+<!-- Column 5: SOCIAL -->
+<div class="space-y-3.5">
+<h4 class="font-bold text-black font-space tracking-widest text-xs">SOCIAL</h4>
+<ul class="space-y-2.5 text-brand-gray font-medium">
+<li class=""><a class="hover:text-black transition-colors" href="#">Facebook</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Instagram</a></li>
+<li class=""><a class="hover:text-black transition-colors" href="#">Spotify Playlist</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Bottom Legal & Copyright -->
+<div class="pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-gray gap-4">
+<div class="">
+          © 2024 Every Half Coffee Roasters. All rights reserved.
+        </div>
+<div class="flex items-center space-x-6 text-[10px] tracking-wider uppercase font-mono">
+<span class="">Designed with Precision</span>
+<span class="">•</span>
+<span class="">Roasting Since 2021</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: SiteFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="filter-tab-behavior">
+    // Interactive filter tab highlight toggling
+    document.addEventListener('DOMContentLoaded', () => {
+      const cityButtons = document.querySelectorAll('[role="tablist"] button');
+      cityButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          cityButtons.forEach(b => {
+            b.classList.remove('bg-brand-black', 'text-white');
+            b.classList.add('bg-brand-lightGray', 'text-brand-black');
+          });
+          btn.classList.remove('bg-brand-lightGray', 'text-brand-black');
+          btn.classList.add('bg-brand-black', 'text-white');
+        });
+      });
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+
+
+</body></html>
