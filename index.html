@@ -132,7 +132,8 @@
                 class="max-w-[1780px] mx-auto px-6 lg:px-16 py-2.5 flex items-center space-x-2 text-[11px] font-mono tracking-wider uppercase text-neutral-500">
                 <a href="#" class="hover:text-black transition-colors">Trang chủ</a><span
                     class="text-neutral-400">/</span><span class="text-black font-medium">Hệ thống cửa hàng (Visit
-                    Us)</span></div>
+                    Us)</span>
+            </div>
         </div>
     </header>
     <!-- END: TopHeader -->
@@ -307,8 +308,7 @@
                 <!-- Story Card 1 -->
                 <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
                     <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Đà Lạt - Lê Đại Hành" class="w-full h-full object-cover"
-                            src="dalat.png">
+                        <img alt="Every Half Đà Lạt - Lê Đại Hành" class="w-full h-full object-cover" src="dalat.png">
                         <div class="absolute bottom-3 left-3 flex gap-2">
                             <span
                                 class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#OutdoorSpace</span>
@@ -335,8 +335,7 @@
                 <!-- Story Card 2 -->
                 <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
                     <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Hưng Gia - Tân Hưng" class="w-full h-full object-cover"
-                            src="ngovan5.png">
+                        <img alt="Every Half Hưng Gia - Tân Hưng" class="w-full h-full object-cover" src="ngovan5.png">
                         <div class="absolute bottom-3 left-3 flex gap-2">
                             <span
                                 class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#PetFriendly</span>
@@ -363,8 +362,7 @@
                 <!-- Story Card 3 -->
                 <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
                     <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Beacon Phan Đăng Lưu" class="w-full h-full object-cover"
-                            src="beacon.png">
+                        <img alt="Every Half Beacon Phan Đăng Lưu" class="w-full h-full object-cover" src="beacon.png">
                         <div class="absolute bottom-3 left-3 flex gap-2">
                             <span
                                 class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#RoasteryLab</span>
@@ -416,8 +414,7 @@
                         <!-- Image with status badge and index -->
                         <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
                             <img alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt"
-                                class="w-full h-full object-cover"
-                                src="dalat.png">
+                                class="w-full h-full object-cover" src="dalat.png">
                             <div
                                 class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
                                 <span
@@ -458,13 +455,16 @@
                     </div>
                     <!-- Action Buttons -->
                     <div class="p-6 pt-0 grid grid-cols-2 gap-3">
+                        <!-- SỬA 1: link Google Maps riêng, tạo từ địa chỉ của quán -->
                         <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+19A+Lê+Đại+Hành,+Phường+Xuân+Hương,+Đà+Lạt,+Lâm+Đồng"
+                            rel="noopener noreferrer" target="_blank">
                             Chỉ đường
                         </a>
+                        <!-- SỬA 2: mở hộp thoại chi tiết (data-store trỏ tới nội dung bài viết trong script cuối trang) -->
                         <button
                             class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button">
+                            type="button" data-store="dalat" data-card="card-1">
                             Xem không gian
                         </button>
                     </div>
@@ -520,12 +520,13 @@
                     <!-- Action Buttons -->
                     <div class="p-6 pt-0 grid grid-cols-2 gap-3">
                         <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+48+Nội+Khu+Hưng+Gia+4,+Tân+Hưng,+Quận+7,+Thành+phố+Hồ+Chí+Minh"
+                            rel="noopener noreferrer" target="_blank">
                             Chỉ đường
                         </a>
                         <button
                             class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button">
+                            type="button" data-store="hunggia" data-card="card-2">
                             Xem không gian
                         </button>
                     </div>
@@ -581,12 +582,13 @@
                     <!-- Action Buttons -->
                     <div class="p-6 pt-0 grid grid-cols-2 gap-3">
                         <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+14-16+Phan+Đăng+Lưu,+Phường+6,+Quận+Bình+Thạnh,+Thành+phố+Hồ+Chí+Minh"
+                            rel="noopener noreferrer" target="_blank">
                             Chỉ đường
                         </a>
                         <button
                             class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button">
+                            type="button" data-store="beacon" data-card="card-3">
                             Xem không gian
                         </button>
                     </div>
@@ -605,6 +607,53 @@
         <!-- END: StoreCardsGridSection -->
     </main>
     <!-- END: MainContent -->
+
+    <!-- BEGIN: SpaceDialog -->
+    <dialog id="space-dialog"
+        class="p-0 backdrop:bg-black/60 rounded-none max-w-2xl w-[calc(100%-2rem)] border border-brand-border bg-white shadow-2xl overflow-hidden text-brand-black backdrop:backdrop-blur-sm">
+        <div class="relative max-h-[88vh] overflow-y-auto flex flex-col">
+            <button id="sd-close-x" type="button"
+                class="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black transition-colors"
+                aria-label="Đóng">
+                ✕
+            </button>
+            <div class="aspect-[16/9] bg-neutral-100 overflow-hidden shrink-0">
+                <img id="sd-img" class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="p-6 space-y-5 flex-grow">
+                <div>
+                    <p id="sd-store" class="text-[11px] font-mono tracking-widest uppercase text-neutral-500 font-bold">
+                    </p>
+                    <h3 id="sd-title" class="font-space text-xl font-bold mt-1 text-black leading-snug"></h3>
+                </div>
+                <p id="sd-lede"
+                    class="text-xs text-neutral-700 leading-relaxed italic border-l-2 border-black pl-3 py-0.5 bg-neutral-50">
+                </p>
+                <div id="sd-body" class="space-y-3 pt-1 border-t border-gray-100"></div>
+                <div class="p-3 bg-brand-lightGray border border-neutral-200 text-xs">
+                    <span class="font-bold text-black font-mono uppercase text-[10px] block mb-0.5">Gợi ý từ Every
+                        Half</span>
+                    <p id="sd-tip" class="text-neutral-700 text-xs leading-relaxed"></p>
+                </div>
+                <div class="pt-2 border-t border-brand-border space-y-3">
+                    <div id="sd-tags" class="flex flex-wrap gap-1.5"></div>
+                    <p id="sd-addr" class="text-xs text-brand-gray font-mono"></p>
+                </div>
+            </div>
+            <div class="p-4 bg-white border-t border-brand-border flex items-center justify-between gap-3 shrink-0">
+                <a id="sd-map" href="" target="_blank" rel="noopener noreferrer"
+                    class="px-5 py-2.5 bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors text-center flex-grow sm:flex-grow-0">
+                    Mở trên Google Maps ↗
+                </a>
+                <button id="sd-close" type="button"
+                    class="px-5 py-2.5 border border-brand-border text-xs font-semibold tracking-wider uppercase hover:border-black transition-colors">
+                    Đóng
+                </button>
+            </div>
+        </div>
+    </dialog>
+    <!-- END: SpaceDialog -->
+
     <!-- BEGIN: SiteFooter -->
     <footer class="bg-white border-t border-brand-border pt-16 pb-12">
         <div class="max-w-[1780px] mx-auto px-6 lg:px-16">
@@ -612,7 +661,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14">
                 <!-- Large Geometric EH Brand Icon -->
                 <div class="md:col-span-3">
-                        <img alt="Every Half Coffee Roasters Logo" class="w-20 h-auto" src="logomini.png">
+                    <img alt="Every Half Coffee Roasters Logo" class="w-20 h-auto" src="logomini.png">
                     <p class="mt-6 text-xs text-brand-gray leading-relaxed max-w-xs">
                         Every Half Coffee Roasters tôn vinh hương vị mộc bản, kết nối cộng đồng yêu cà phê đặc sản thông
                         qua kiến trúc tinh tế và trải nghiệm chân thực.
@@ -709,10 +758,74 @@
             });
         });
     </script>
+
+    <!-- MỚI: nội dung bài viết + logic mở hộp thoại "Xem không gian" -->
+    <script data-purpose="space-dialog">
+        const SPACES = {
+            dalat: {
+                title: 'Một buổi sáng chậm lại ở Lê Đại Hành, Đà Lạt',
+                lede: 'Giữa phố đồi se lạnh, cửa hàng Every Half trên đường Lê Đại Hành là chỗ để dừng chân: một ly cà phê đặc sản, chút không khí trong lành và khoảng ngồi đủ thoáng để bạn không phải vội.',
+                sections: [
+                    ['Không gian', 'Mặt tiền nổi bật với biển chữ M dễ nhận ra từ xa. Bên trong, bố cục tối giản giữ cho tầm nhìn thông thoáng, còn khu ngồi ngoài trời cho bạn uống cà phê giữa không khí Đà Lạt thay vì chỉ nhìn nó qua cửa kính.'],
+                    ['Nên thử gì', 'Đà Lạt là nơi gần vùng trồng Arabica Cầu Đất nhất trong hệ thống, nên đây là dịp tốt để hỏi barista về dòng Arabica đang có và chọn cách pha hợp khẩu vị: pha phin nhẹ, pour over hoặc espresso.'],
+                    ['Hợp với ai', 'Du khách muốn bắt đầu ngày mới thật chậm, nhóm bạn đi cùng thú cưng, hoặc ai cần một chỗ ngồi yên tĩnh giữa lịch trình tham quan.']
+                ],
+                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Ghé sớm sau 07:00 để ngồi ngoài trời khi trời còn mát và ít người.'
+            },
+            hunggia: {
+                title: 'Sân vườn xanh giữa Phú Mỹ Hưng: nơi làm việc và nghỉ ngơi trong một',
+                lede: 'Nếu bạn đang tìm một quán cà phê đẹp ở Quận 7 để làm việc buổi sáng hoặc gặp bạn cuối tuần, cửa hàng Hưng Gia có thứ khó tìm trong nội thành: một khoảng sân vườn để ngồi.',
+                sections: [
+                    ['Không gian', 'Cửa hàng nằm trong khu nội khu yên tĩnh, tách khỏi nhịp xe cộ của đường lớn. Khu sân vườn đón nhiều ánh sáng tự nhiên, còn bên trong giữ phong cách tối giản đặc trưng của Every Half.'],
+                    ['Nên thử gì', 'Buổi sáng làm việc hợp với một ly cà phê lọc để uống chậm. Buổi chiều nóng, cold brew là lựa chọn dễ uống. Nếu thích vị đậm, hỏi barista về dòng Fine Robusta Đắk Lắk, dòng cà phê từng giành giải Vàng Global Coffee Awards.'],
+                    ['Hợp với ai', 'Người làm việc tự do cần chỗ yên tĩnh, nhóm bạn gặp nhau cuối tuần, và khách đi ô tô nhờ có chỗ đậu xe gần cửa hàng.']
+                ],
+                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Khung giờ sáng các ngày trong tuần thường vắng hơn, phù hợp để làm việc.'
+            },
+            beacon: {
+                title: 'Beacon Phan Đăng Lưu: nơi cà phê được rang ngay trước mắt bạn',
+                lede: 'Hầu hết quán cà phê chỉ cho bạn thấy ly cà phê cuối cùng. Ở Beacon, bạn thấy cả đoạn đường phía trước nó: từ hạt xanh, mẻ rang đến tách cà phê trên quầy.',
+                sections: [
+                    ['Không gian', 'Khu xưởng rang (Roastery Lab) là điểm nhấn của cửa hàng. Quầy bar và khu rang nằm gần nhau, nên bạn có thể vừa ngồi uống vừa quan sát quy trình rang. Cách bài trí tối giản để mọi sự chú ý dồn vào cà phê.'],
+                    ['Nên thử gì', 'Hãy hỏi barista về mẻ rang mới trong ngày và chọn một ly pha tay để nếm rõ hương vị. Dòng Fine Robusta Đắk Lắk sơ chế Honey là lựa chọn thú vị cho người nghĩ Robusta chỉ có vị đắng.'],
+                    ['Hợp với ai', 'Người mới tìm hiểu cà phê đặc sản, dân mê cà phê muốn xem quy trình rang, hoặc bất kỳ ai muốn một chỗ hẹn có câu chuyện để kể. Cửa hàng có chỗ gửi xe máy miễn phí.']
+                ],
+                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Nếu muốn hỏi sâu về quy trình rang, nên ghé ngoài giờ cao điểm.'
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const dlg = document.getElementById('space-dialog');
+            const $ = id => document.getElementById(id);
+
+            document.querySelectorAll('button[data-store]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const data = SPACES[btn.dataset.store];
+                    const card = document.getElementById(btn.dataset.card);
+                    // Lấy lại ảnh, tên, địa chỉ, tag và link chỉ đường từ chính thẻ cửa hàng
+                    const img = card.querySelector('img');
+                    $('sd-img').src = img.src; $('sd-img').alt = img.alt;
+                    $('sd-store').textContent = card.querySelector('h3').textContent.trim();
+                    $('sd-title').textContent = data.title;
+                    $('sd-lede').textContent = data.lede;
+                    $('sd-body').innerHTML = data.sections.map(([h, p]) =>
+                        '<div><h4 class="font-space font-bold text-sm">' + h + '</h4><p class="text-xs text-brand-gray leading-relaxed mt-0.5">' + p + '</p></div>').join('');
+                    $('sd-tip').textContent = data.tip;
+                    $('sd-tags').innerHTML = [...card.querySelectorAll('span.bg-brand-lightGray')].map(s =>
+                        '<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">' + s.textContent.trim() + '</span>').join('');
+                    $('sd-addr').textContent = 'Địa chỉ: ' + card.querySelector('p.text-xs').textContent.trim();
+                    $('sd-map').href = card.querySelector('a[target="_blank"]').href;
+                    dlg.showModal();
+                    dlg.scrollTop = 0;
+                });
+            });
+
+            $('sd-close').addEventListener('click', () => dlg.close());
+            $('sd-close-x').addEventListener('click', () => dlg.close());
+            dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+        });
+    </script>
     <!-- END: InteractiveScripts -->
-
-
-
 
 </body>
 
