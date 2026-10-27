@@ -1,832 +1,1582 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="vi" style="">
+<html lang="vi">
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Every Half Coffee Roasters - Destination Experience | Hệ Thống Cửa Hàng</title>
-    <!-- Google Fonts: Space Grotesk & Inter -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hệ thống cửa hàng Every Half – Quán cà phê đặc sản đẹp | Every Half Coffee Roasters</title>
+    <meta name="description"
+        content="Khám phá không gian cà phê đặc sản của Every Half: sân vườn, góc check-in, roastery. Tìm cửa hàng gần bạn, xem giờ mở cửa và chỉ đường nhanh.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Every Half Coffee Roasters">
+    <meta property="og:title" content="Hệ thống cửa hàng Every Half – Quán cà phê đặc sản đẹp">
+    <meta property="og:description" content="Tìm cửa hàng Every Half có không gian phù hợp nhất với bạn hôm nay.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Open+Sans:wght@400;600;700&family=SUSE+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <!-- Tailwind CSS CDN with plugins -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script data-purpose="tailwind-config">
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Space Grotesk', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            black: '#111111',
-                            dark: '#1C1C1E',
-                            gray: '#6E6E73',
-                            lightGray: '#F5F5F7',
-                            border: '#E5E5EA',
-                            accent: '#0A84FF',
-                            badge: '#2C2C2E',
-                        }
-                    },
-                    letterSpacing: {
-                        tightest: '-0.035em',
-                        widestPlus: '0.18em',
-                    }
-                }
-            }
+    <script
+        type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Every Half Coffee Roasters", "alternateName": "Every Half", "url": "https://everyhalf.vn/"}, {"@type": "ItemList", "name": "Hệ thống cửa hàng Every Half", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Hưng Gia", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10350-830481782890683-1782890683.jpg", "address": {"@type": "PostalAddress", "streetAddress": "48 Đ. Nội Khu Hưng Gia 4, II, Tân Hưng, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Beacon", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10348-231061782890638-1782890638.jpg", "address": {"@type": "PostalAddress", "streetAddress": "14-16 Phan Đăng Lưu, Gia Định, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Centec", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10278-322201782711761-1782711761.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Hẻm 145 Hai Bà Trưng, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Vinhomes Central Park", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10346-773071782890586-1782890586.jpg", "address": {"@type": "PostalAddress", "streetAddress": "208 Nguyễn Hữu Cảnh, Phường, Thạnh Mỹ Tây, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Centre Point", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10344-135231782890492-1782890492.jpg", "address": {"@type": "PostalAddress", "streetAddress": "241 Nguyễn Trọng Tuyển, Phú Nhuận, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Hồ Con Rùa", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10342-770611782890459-1782890459.jpg", "address": {"@type": "PostalAddress", "streetAddress": "10 Công trường Quốc Tế, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Endovina", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10341-649691782890432-1782890432.jpg", "address": {"@type": "PostalAddress", "streetAddress": "146 Nguyễn Đình Chiểu, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Đồng Khởi", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10339-596521782890404-1782890404.jpg", "address": {"@type": "PostalAddress", "streetAddress": "8 - 24 Ngô Đức Kế, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Midtown", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10337-528741782890370-1782890370.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Lô M8 Midtown, Phú Mỹ Hưng, Tân Mỹ, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - mPlaza", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10335-903401782890338-1782890338.jpg", "address": {"@type": "PostalAddress", "streetAddress": "mPlaza, 39 Lê Duẩn, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Le Jardin Nam Phúc", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10333-933431782890291-1782890291.jpg", "address": {"@type": "PostalAddress", "streetAddress": "K.phố Nam Phúc, Le Jardin, Đường C, Tân Mỹ, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 12, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Phan Văn Trị", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10331-142941782890257-1782890257.jpg", "address": {"@type": "PostalAddress", "streetAddress": "467 Đ. Phan Văn Trị, An Nhơn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 13, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Saigon Pearl", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10329-774671782890228-1782890228.jpg", "address": {"@type": "PostalAddress", "streetAddress": "92 Nguyễn Hữu Cảnh, phường, Thạnh Mỹ Tây, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 14, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Saigon Tower", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10327-177941782890196-1782890196.jpg", "address": {"@type": "PostalAddress", "streetAddress": "29 Lê Duẩn, Phường, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 15, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Sala", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10303-567551782794053-1782794053.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Chung Cư C1, Tầng 01,02, Khu III/Tháp A/62 Đ. Hoàng Thế Thiện, An Khánh, Hồ Chí Minh 70000, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 16, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Tôn Đức Thắng", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10326-717581782890141-1782890141.jpg", "address": {"@type": "PostalAddress", "streetAddress": "2A-4A Tôn Đức Thắng, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 17, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Somerset", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10307-590111782795291-1782795291.jpg", "address": {"@type": "PostalAddress", "streetAddress": "21-23 Nguyễn Thị Minh Khai, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 18, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Roastery Thảo Điền", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10309-292331782796164-1782796164.jpg", "address": {"@type": "PostalAddress", "streetAddress": "01 Đ. Số 10, Quận 2, An Khánh, Hồ Chí Minh 70000, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 19, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Infiniti", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10324-812001782889968-1782889969.jpg", "address": {"@type": "PostalAddress", "streetAddress": "2 Nguyễn Văn Tưởng, Tân Mỹ, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 20, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Thi Sách", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10323-821941782889943-1782889943.jpg", "address": {"@type": "PostalAddress", "streetAddress": "26 Thi Sách, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 21, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Tống Hữu Định", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10316-892131782797416-1782797416.jpg", "address": {"@type": "PostalAddress", "streetAddress": "36 Tống Hữu Định, An Khánh, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 22, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Trương Định", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10373-117271783656578-1783656578.jpg", "address": {"@type": "PostalAddress", "streetAddress": "14 Trương Định, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 23, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Tú Xương", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10321-677381782889846-1782889846.jpg", "address": {"@type": "PostalAddress", "streetAddress": "6E Tú Xương, P, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 24, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Hoàng Văn Thái", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10353-326871782891049-1782891049.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Tòa IMV, Lô CR3-2 tầng G và tầng M, 87 Hoàng Văn Thái, Tân Mỹ, Hồ Chí Minh 70000, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 25, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - The Hallmark", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10354-498001782892085-1782892085.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Cổng C, 15 Đ. Trần Bạch Đằng, An Khánh, Hồ Chí Minh 70000, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 26, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Ngô Văn Năm", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10356-243691782892193-1782892193.jpg", "address": {"@type": "PostalAddress", "streetAddress": "19A Ngô Văn Năm, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 27, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Nguyễn Văn Thủ", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10359-568581782894944-1782894944.jpg", "address": {"@type": "PostalAddress", "streetAddress": "217 Nguyễn Văn Thủ, Tân Định, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 28, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Pasteur", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10362-805261782895052-1782895052.jpg", "address": {"@type": "PostalAddress", "streetAddress": "34 Pasteur, Sài Gòn, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 29, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Phạm Ngọc Thạch", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10364-163481782896297-1782896297.jpg", "address": {"@type": "PostalAddress", "streetAddress": "32 Phạm Ngọc Thạch, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 30, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Võ Thị Sáu", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10367-926671782896525-1782896525.jpg", "address": {"@type": "PostalAddress", "streetAddress": "232/23 Võ Thị Sáu, Xuân Hòa, Hồ Chí Minh, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 31, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Ngọc Hà", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10369-347541782897686-1782897686.jpg", "address": {"@type": "PostalAddress", "streetAddress": "19C P. Ngọc Hà, Ba Đình, Hà Nội, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 32, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Làng Lụa Hội An", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10371-622021783067937-1783067937.jpg", "address": {"@type": "PostalAddress", "streetAddress": "28 Nguyễn Tất Thành, Hội An Tây, Đà Nẵng, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 33, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Châu Long", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10375-609491783656945-1783656945.jpg", "address": {"@type": "PostalAddress", "streetAddress": "34 P. Châu Long, Ba Đình, Hà Nội, Vietnam", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:30-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 34, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters Lê Đại Hành - Đà Lạt", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10976-571531791123606-1791123606.jpg", "address": {"@type": "PostalAddress", "streetAddress": "19a Lê Đại Hành, Xuân Hương - Đà Lạt, Lâm Đồng", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 35, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Celadon", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10977-692391791123767-1791123767.jpg", "address": {"@type": "PostalAddress", "streetAddress": "Shophouse S2.0.13 Diamond Alnata Plus, Celadon City, Tan Phu District, HCMC", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 36, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Hoa Mai", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10978-609171791123913-1791123913.jpg", "address": {"@type": "PostalAddress", "streetAddress": "27 Hoa Mai, Phường Cầu Kiệu, TP. HCM", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 37, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Nguyễn Thị Diệu", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10979-548171791124014-1791124014.jpg", "address": {"@type": "PostalAddress", "streetAddress": "38A Nguyễn Thị Diệu, P. Xuân Hoà, TP. HCM", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 38, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Bến Văn Đồn", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10981-352621791124172-1791124172.jpg", "address": {"@type": "PostalAddress", "streetAddress": "243 Bến Văn Đồn, Phường Vĩnh Hội, TP. HCM", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 39, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Phố Chả Cá", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10982-493171791124277-1791124277.jpg", "address": {"@type": "PostalAddress", "streetAddress": "6B P. Chả Cá, Hoàn Kiếm, Hà Nội", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 40, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Times City", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10983-412431791124366-1791124366.jpg", "address": {"@type": "PostalAddress", "streetAddress": "SH05 Park 11, Khu đô thị Times City, Vĩnh Tuy, Hà Nội", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 41, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Vincom Đà Nẵng", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10984-434991791124649-1791124649.webp", "address": {"@type": "PostalAddress", "streetAddress": "910A Ng. Quyền, An Hải, Đà Nẵng", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 42, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Bưu Điện Hà Nội", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10985-732441791124761-1791124761.jpg", "address": {"@type": "PostalAddress", "streetAddress": "10 P. Lê Thạch, French Quarter, Hoàn Kiếm, Hà Nội", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 43, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Nguyễn Văn Thương", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10986-966261791124924-1791124924.jpg", "address": {"@type": "PostalAddress", "streetAddress": "75 Nguyễn Văn Thương, Thạnh Mỹ Tây, Hồ Chí Minh", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}, {"@type": "ListItem", "position": 44, "item": {"@type": "CafeOrCoffeeShop", "name": "Every Half Coffee Roasters - Hanoi Tower Thợ Nhuộm", "image": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10988-980521791601715-1791601715.jpeg", "address": {"@type": "PostalAddress", "streetAddress": "69 Phố Thợ Nhuộm, Phường Cửa Nam, Hà Nội", "addressCountry": "VN"}, "openingHours": "Mo-Su 07:00-21:30", "url": "https://everyhalf.vn/location"}}]}]}</script>
+    <style>
+        :root {
+            --bg: #F6F6F3;
+            --ink: #231F20;
+            --mute: #6b6b6b;
+            --line: #dcdcd6;
+            --soft: #ececE6
         }
-    </script>
-    <style data-purpose="custom-typography">
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FAFAFA;
-            color: #111111;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'Open Sans', sans-serif;
+            -webkit-font-smoothing: antialiased
         }
 
-        .font-space {
-            font-family: 'Space Grotesk', sans-serif;
+        .h {
+            font-family: 'Bricolage Grotesque', sans-serif
         }
-    </style>
-    <style data-purpose="micro-interactions">
-        .card-zoom-container {
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .mono {
+            font-family: 'SUSE Mono', monospace
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            background: rgba(246, 246, 243, .94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+            transition: background .3s
+        }
+
+        header.scrolled {
+            background: rgba(246, 246, 243, .68)
+        }
+
+        .bar {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 48px;
+            height: 80px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center
+        }
+
+        .nav {
+            display: flex;
+            gap: 40px;
+            font: 700 12px 'Open Sans', sans-serif;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            align-items: center
+        }
+
+        .nav.r {
+            justify-content: flex-end;
+            gap: 28px
+        }
+
+        .nav a {
+            color: #6E6E73
+        }
+
+        .nav a:hover,
+        .nav a.on {
+            color: #111
+        }
+
+        .nav a.on {
+            border-bottom: 2px solid #111;
+            padding-bottom: 4px
+        }
+
+        .lang {
+            font-size: 11px;
+            font-weight: 600;
+            color: #6E6E73;
+            border-left: 1px solid var(--line);
+            border-right: 1px solid var(--line);
+            padding: 0 12px
+        }
+
+        .lang b {
+            color: #111
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            font: 600 10px 'SUSE Mono', monospace;
+            margin-left: 8px;
+            letter-spacing: 0
+        }
+
+        .logo img {
+            height: 46px;
+            display: block
+        }
+
+        .crumb {
+            border-top: 1px solid var(--line);
+            background: rgba(255, 255, 255, .55)
+        }
+
+        .crumb div {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 10px 48px;
+            font: 500 11px 'SUSE Mono', monospace;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: #6b6b6b
+        }
+
+        .crumb b {
+            color: #111;
+            font-weight: 500
+        }
+
+        .wrap {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 48px
+        }
+
+        .hero {
+            text-align: center;
+            margin: 80px auto 72px
+        }
+
+        .hero h1 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500;
+            font-size: clamp(28px, 4.4vw, 56px);
+            line-height: 1.18;
+            max-width: 980px;
+            margin: 0 auto 24px;
+            font-variation-settings: 'wght' 550, 'wdth' 88, 'opsz' 48
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 28px
+        }
+
+        /* Điểm 2: bộ lọc hợp nhất */
+        .filters {
+            padding: 20px 0 20px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin-bottom: 56px
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 8px 28px
+        }
+
+        .row+.row {
+            margin-top: 18px
+        }
+
+        .tab {
+            background: none;
+            border: 0;
+            font: 500 16px 'Bricolage Grotesque', sans-serif;
+            color: #444;
+            padding: 6px 14px;
+            cursor: pointer
+        }
+
+        .tab:hover {
+            background: #ebebe6
+        }
+
+        .tab.on {
+            background: #111;
+            color: #fff;
+            font-weight: 700
+        }
+
+        .lab {
+            font: 500 12px 'SUSE Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: var(--mute)
+        }
+
+        .chip {
+            border: 1px solid var(--ink);
+            background: none;
+            border-radius: 999px;
+            padding: 6px 14px;
+            font: 600 12px 'SUSE Mono', monospace;
+            letter-spacing: .04em;
+            cursor: pointer;
+            color: var(--ink)
+        }
+
+        .chip i {
+            font-style: normal;
+            opacity: .55
+        }
+
+        .chip:hover {
+            background: #ebebe6
+        }
+
+        .chip.on {
+            background: var(--ink);
+            color: #fff
+        }
+
+        .count {
+            margin-left: auto;
+            font: 500 12px 'SUSE Mono', monospace;
+            color: var(--mute)
+        }
+
+        .sec-t {
+            font: 550 clamp(24px, 3vw, 36px)/1.2 'Bricolage Grotesque', sans-serif;
+            margin: 8px 0 8px
+        }
+
+        .sec-s {
+            font-size: 15px;
+            color: var(--mute);
+            max-width: 640px;
+            margin-bottom: 40px;
+            line-height: 24px
+        }
+
+        /* Điểm 3: không gian nổi bật */
+        .stories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            margin-bottom: 96px
+        }
+
+        .story h3 {
+            font: 700 22px 'Bricolage Grotesque', sans-serif;
+            margin: 14px 0 6px
+        }
+
+        .story p {
+            font-size: 14px;
+            line-height: 24px;
+            color: #444;
+            margin-bottom: 14px
+        }
+
+        .story .btn {
+            margin-top: 10px;
+            width: auto
+        }
+
+        .ph {
+            aspect-ratio: 16/10;
             overflow: hidden;
+            background: #e4e4de;
+            position: relative
         }
 
-        .card-zoom-container img {
-            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .card-zoom-container:hover img {
-            transform: scale(1.04);
-        }
-
-        .subtle-underline {
-            position: relative;
-        }
-
-        .subtle-underline::after {
-            content: '';
-            position: absolute;
+        .ph img {
             width: 100%;
-            height: 1.5px;
-            bottom: -4px;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s
+        }
+
+        .store:hover .ph img,
+        .story:hover .ph img {
+            transform: scale(1.05)
+        }
+
+        .cap {
+            position: absolute;
             left: 0;
-            background-color: #111111;
+            bottom: 0;
+            background: var(--ink);
+            color: #fff;
+            font: 600 11px 'SUSE Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            padding: 6px 10px
         }
 
-        .custom-scrollbar::-webkit-scrollbar {
-            height: 4px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 72px 56px;
+            margin-bottom: 120px
         }
 
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #D1D1D6;
-            border-radius: 4px;
+        .store {
+            transition: opacity .3s
+        }
+
+        .store[hidden] {
+            display: none
+        }
+
+        .store h2 {
+            font: 800 22px/1.25 'Bricolage Grotesque', sans-serif;
+            letter-spacing: -.01em;
+            margin: 18px 0 10px
+        }
+
+        .store h2,
+        .story h3 {
+            font-weight: 700
+        }
+
+        .addr {
+            font-size: 12px;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            line-height: 1.7;
+            margin-top: 2px
+        }
+
+        .hrs {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            margin-top: 2px
+        }
+
+        .st {
+            font-weight: 700;
+            margin-left: 6px
+        }
+
+        .st.o {
+            color: #1f7a4d
+        }
+
+        .st.c {
+            color: #a33
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 14px;
+            min-height: 0
+        }
+
+        .tags:empty {
+            display: none
+        }
+
+        .tag {
+            font: 500 10px 'SUSE Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            background: var(--soft);
+            padding: 3px 8px
+        }
+
+        .cta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 13px 10px;
+            font: 600 12px 'SUSE Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            border: 1px solid var(--ink);
+            cursor: pointer;
+            background: none;
+            color: var(--ink);
+            transition: background .2s, color .2s
+        }
+
+        .btn.primary {
+            background: var(--ink);
+            color: #fff
+        }
+
+        .btn.primary:hover {
+            background: #000
+        }
+
+        .btn.ghost:hover,
+        .btn.call:not([aria-disabled=true]):hover {
+            background: var(--ink);
+            color: #fff
+        }
+
+        .btn.wide {
+            grid-column: 1/-1
+        }
+
+        .btn[aria-disabled=true] {
+            opacity: .45;
+            cursor: not-allowed
+        }
+
+        .empty {
+            text-align: center;
+            padding: 60px 0;
+            color: var(--mute);
+            display: none
+        }
+
+        dialog {
+            border: 0;
+            margin: auto;
+            position: fixed;
+            inset: 0;
+            max-width: 680px;
+            width: calc(100% - 32px);
+            max-height: 88vh;
+            padding: 0;
+            background: #fff;
+            color: var(--ink);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .35);
+            overflow: auto
+        }
+
+        dialog::backdrop {
+            background: rgba(0, 0, 0, .6);
+            backdrop-filter: blur(3px)
+        }
+
+        .dl {
+            padding: 0
+        }
+
+        .dl .body {
+            padding: 28px 32px 8px
+        }
+
+        .dl h3 {
+            font: 700 26px/1.25 'Bricolage Grotesque', sans-serif;
+            margin: 8px 0 14px
+        }
+
+        .dl .photos img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            display: block
+        }
+
+        .dl .lede {
+            font-size: 14px;
+            line-height: 24px;
+            color: #444;
+            border-left: 2px solid var(--ink);
+            padding: 4px 0 4px 14px;
+            background: var(--bg);
+            margin-bottom: 18px
+        }
+
+        .dl .close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 0;
+            background: rgba(0, 0, 0, .65);
+            color: #fff;
+            cursor: pointer;
+            z-index: 2;
+            font-size: 14px
+        }
+
+        .dl h4 {
+            font: 700 15px 'Bricolage Grotesque', sans-serif;
+            margin: 16px 0 4px
+        }
+
+        .dl .body p {
+            font-size: 14px;
+            line-height: 24px
+        }
+
+        .dl .body .addr {
+            font-size: 12px;
+            margin-top: 18px
+        }
+
+        .tipbox {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            padding: 14px 16px;
+            margin-top: 18px
+        }
+
+        .tipbox p {
+            font-size: 13px !important;
+            line-height: 21px !important;
+            margin-top: 4px
+        }
+
+        .dl .foot {
+            display: flex;
+            gap: 10px;
+            padding: 18px 32px 28px;
+            border-top: 1px solid var(--line);
+            margin-top: 16px
+        }
+
+        .dl .foot .btn {
+            flex: 1
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 36px 0 44px;
+            font-size: 12px;
+            color: var(--mute);
+            line-height: 20px
+        }
+
+        footer .links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            font: 600 12px 'SUSE Mono', monospace;
+            text-transform: uppercase;
+            color: var(--ink);
+            margin-bottom: 18px
+        }
+
+        @media(max-width:900px) {
+            .nav {
+                display: none
+            }
+
+            .bar {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                height: 64px;
+                padding: 0 16px
+            }
+
+            .crumb div {
+                padding: 8px 16px
+            }
+
+            .logo img {
+                height: 38px
+            }
+
+            .hero {
+                margin: 48px auto 48px
+            }
+
+            .grid {
+                gap: 56px
+            }
+
+            .stories {
+                gap: 40px;
+                margin-bottom: 64px
+            }
+
+            .stories {
+                grid-template-columns: 1fr
+            }
+
+            .grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                margin: 28px auto
+            }
+
+            .wrap {
+                padding: 0 20px
+            }
+
+            .count {
+                margin-left: 0
+            }
+
+            .filters {
+                top: 68px
+            }
         }
     </style>
 </head>
 
-<body class="bg-[#FAFAFA] text-brand-black flex flex-col min-h-screen">
-    <!-- BEGIN: TopHeader -->
-    <header class="sticky top-0 z-50 bg-[#FAFAFA]/95 backdrop-blur-md border-b border-brand-border">
-        <!-- Breadcrumb minimal top bar -->
-
-        <!-- Main Navigation Bar -->
-        <div class="max-w-[1780px] mx-auto px-6 lg:px-16 h-20 flex items-center justify-between">
-            <!-- Left Navigation Items -->
-            <nav aria-label="Main Navigation"
-                class="hidden lg:flex items-center space-x-10 text-[12px] font-semibold tracking-widest uppercase">
-                <a class="text-brand-gray hover:text-black transition-colors" href="#">ABOUT US</a>
-                <a class="text-brand-gray hover:text-black transition-colors" href="#">OUR PRODUCTS</a>
-                <a class="text-black font-bold subtle-underline" href="#">VISIT US</a>
-                <a class="text-brand-gray hover:text-black transition-colors" href="#">JOURNAL</a>
+<body>
+    <header id="hd">
+        <div class="bar">
+            <nav class="nav"><a href="https://everyhalf.vn/about-us">About us</a><a
+                    href="https://everyhalf.vn/product">Our products</a><a class="on"
+                    href="https://everyhalf.vn/location">Visit us</a><a href="https://everyhalf.vn/news">Journal</a>
             </nav>
-            <!-- Center Geometric Brand Logo 'EV HA' -->
-            <div class="flex justify-center flex-1 lg:flex-none">
-                <img alt="Every Half Coffee Roasters Logo" class="w-20 h-auto" src="logomini.png">
-            </div>
-            <!-- Right Utility Navigation Items -->
-            <div class="flex items-center space-x-6 lg:space-x-8 text-[12px] font-semibold tracking-widest uppercase">
-                <a class="hidden sm:inline-block text-brand-gray hover:text-black transition-colors" href="#">JOBS</a>
-                <a class="text-brand-gray hover:text-black transition-colors" href="#">SIGN UP / LOGIN</a>
-                <div
-                    class="hidden sm:flex items-center text-brand-gray text-[11px] font-medium border-l border-r border-brand-border px-3 space-x-1.5">
-                    <span class="text-black font-bold">VN</span>
-                    <span class="">/</span>
-                    <span class="hover:text-black cursor-pointer">EN</span>
-                </div>
-                <a class="flex items-center space-x-2 text-black hover:opacity-75 transition-opacity" href="#">
-                    <span class="">GIỎ HÀNG</span>
-                    <span
-                        class="inline-flex items-center justify-center bg-black text-white text-[10px] w-5 h-5 rounded-full font-mono">0</span>
-                </a>
-            </div>
+            <a class="logo" href="https://everyhalf.vn/"><img
+                    src="https://assets.everyhalf.vn/uploads/filecloud/11000/2026/August/10479-922121785830257-1785830257.png"
+                    alt="Every Half Coffee Roasters"></a>
+            <nav class="nav r"><a href="https://tuyendung.everyhalf.vn">Jobs</a><a
+                    href="https://everyhalf.vn/login">Sign up / Login</a><span class="lang"><b>VN</b> / EN</span><a
+                    href="https://everyhalf.vn/cart" style="color:#111">Giỏ hàng<span class="badge">0</span></a></nav>
         </div>
-        <div class="border-t border-brand-border bg-white/95">
-            <div
-                class="max-w-[1780px] mx-auto px-6 lg:px-16 py-2.5 flex items-center space-x-2 text-[11px] font-mono tracking-wider uppercase text-neutral-500">
-                <a href="#" class="hover:text-black transition-colors">Trang chủ</a><span
-                    class="text-neutral-400">/</span><span class="text-black font-medium">Hệ thống cửa hàng (Visit
-                    Us)</span>
-            </div>
+        <div class="crumb">
+            <div>Trang chủ &nbsp;/&nbsp; <b>Hệ thống cửa hàng (Visit Us)</b></div>
         </div>
     </header>
-    <!-- END: TopHeader -->
-    <!-- BEGIN: MainContent -->
-    <main class="flex-grow">
-        <!-- BEGIN: HeroBannerSection -->
-        <section class="max-w-[1780px] mx-auto px-6 lg:px-16 pt-10 pb-16 lg:pt-14 lg:pb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Hero Text Column -->
-                <div class="lg:col-span-5 space-y-7 pr-0 lg:pr-6">
-
-                    <h1
-                        class="font-space text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tightest leading-[1.12] text-brand-black">
-                        Khám Phá Không Gian Cà Phê Đặc Sản – Nơi Mỗi Góc Nho Nhỏ Kể Một Câu Chuyện.
-                    </h1>
-                    <p class="text-brand-gray text-sm sm:text-base leading-relaxed font-normal">
-                        Từ không gian sân vườn thoáng đãng đến những xưởng rang ấm cúng. Tìm cửa hàng Every Half có
-                        thiết kế phù hợp nhất với trải nghiệm thưởng thức và kết nối của bạn hôm nay.
-                    </p>
-                    <!-- Interactive Action Buttons -->
-                    <div class="pt-2 flex flex-wrap gap-4 items-center">
-                        <a class="inline-flex items-center justify-center px-7 py-3.5 bg-brand-black text-white text-xs font-semibold tracking-widest uppercase hover:bg-neutral-800 transition-all shadow-sm"
-                            href="#store-locator">
-                            Tìm cửa hàng gần bạn
-                            <svg class="ml-2.5 w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"></path>
-                            </svg>
-                        </a>
-                        <a class="inline-flex items-center justify-center px-7 py-3.5 border border-brand-black text-brand-black text-xs font-semibold tracking-widest uppercase hover:bg-black hover:text-white transition-all"
-                            href="#store-cards">
-                            Khám phá không gian
-                        </a>
-                    </div>
-                    <!-- Feature Highlights Mini Metric -->
-                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-brand-border text-left">
-                        <div>
-                            <span class="block font-space text-2xl font-bold text-black">43+</span>
-                            <span class="text-[11px] text-brand-gray uppercase tracking-wider">Cửa Hàng</span>
-                        </div>
-                        <div>
-                            <span class="block font-space text-2xl font-bold text-black">04</span>
-                            <span class="text-[11px] text-brand-gray uppercase tracking-wider">Thành Phố</span>
-                        </div>
-                        <div>
-                            <span class="block font-space text-2xl font-bold text-black">100%</span>
-                            <span class="text-[11px] text-brand-gray uppercase tracking-wider">Rang Mộc Thủ Công</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hero Primary Visual Showcase -->
-                <div class="lg:col-span-7">
-                    <div class="relative bg-white p-3 lg:p-4 border border-brand-border shadow-sm">
-                        <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100">
-                            <img alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt Architecture"
-                                class="w-full h-full object-cover object-center filter saturate-[0.98] contrast-[1.02]"
-                                src="dalat.png">
-                            <div
-                                class="absolute top-4 left-4 bg-black/85 text-white text-[11px] tracking-wider uppercase font-mono px-3 py-1.5 backdrop-blur-sm">
-                                FLAGSHIP SPOTLIGHT • ĐÀ LẠT
-                            </div>
-                        </div>
-                        <div
-                            class="pt-4 pb-2 px-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs">
-                            <div>
-                                <p class="font-bold text-sm font-space">Every Half Coffee Roasters - Lê Đại Hành (Đà
-                                    Lạt)</p>
-                                <p class="text-brand-gray text-[11px] tracking-wide mt-0.5">19A Lê Đại Hành, Phường Xuân
-                                    Hương, TP. Đà Lạt, Lâm Đồng</p>
-                            </div>
-                            <div class="flex items-center space-x-3 text-[11px] font-mono text-brand-gray shrink-0">
-                                <span class="">07:00 – 21:30</span>
-                                <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                <span class="text-black font-semibold uppercase">Mở cửa đón khách</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main class="wrap">
+        <!-- Điểm 4: Hero H1 + sub-title -->
+        <section class="hero">
+            <h1>Khám Phá Không Gian Cà Phê Đặc Sản – Nơi Mỗi Góc Nhỏ Kể Một Câu Chuyện.</h1>
+            <p>Từ không gian sân vườn thoáng đãng đến những xưởng rang ấm cúng. Tìm cửa hàng Every Half có thiết kế phù
+                hợp nhất với trải nghiệm thưởng thức và kết nối của bạn hôm nay.</p>
         </section>
-        <!-- END: HeroBannerSection -->
-        <!-- BEGIN: SingleHorizontalFilterBar -->
-        <section class="max-w-[1780px] mx-auto px-6 lg:px-16 py-8 border-y border-brand-border bg-white"
-            id="store-locator">
-            <div class="space-y-6">
-                <!-- Filter Header Title & Clear Reset -->
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
-                    <div>
-                        <h2 class="font-space text-2xl font-bold tracking-tight text-brand-black">Hệ thống cửa hàng</h2>
-                        <p class="text-xs text-brand-gray mt-1">Chào mừng bạn đến với các cửa hàng của chúng tôi, nơi
-                            mỗi tách cà phê kể một câu chuyện và mỗi không gian được tạo ra để kết nối.</p>
-                    </div>
-                    <div class="flex items-center space-x-2 text-xs font-mono text-brand-gray">
-                        <span class="">Hiển thị kết quả: <strong class="text-black">43 địa điểm</strong></span>
-                    </div>
-                </div>
-                <!-- Horizontal Level 1: City Tabs Filter -->
-                <div aria-label="Lọc theo thành phố"
-                    class="flex items-center overflow-x-auto space-x-2.5 pb-2 border-b border-gray-100 custom-scrollbar"
-                    role="tablist">
-                    <button
-                        class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-black text-white whitespace-nowrap shadow-sm">
-                        Tất cả (43)
-                    </button>
-                    <button
-                        class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
-                        Thành phố Hồ Chí Minh (35)
-                    </button>
-                    <button
-                        class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
-                        Thành phố Hà Nội (5)
-                    </button>
-                    <button
-                        class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
-                        Thành phố Đà Nẵng (2)
-                    </button>
-                    <button
-                        class="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors bg-brand-lightGray text-brand-black hover:bg-neutral-200 whitespace-nowrap">
-                        Tỉnh Lâm Đồng (1)
-                    </button>
-                </div>
-                <!-- Horizontal Level 2: Amenity & Vibe Tag Chips -->
-                <div aria-label="Lọc theo tiện ích" class="flex items-center flex-wrap gap-2 pt-1 text-xs">
-                    <span class="text-[11px] font-mono uppercase tracking-widest text-brand-gray mr-2">BỘ LỌC TIỆN
-                        ÍCH:</span>
-                    <button
-                        class="px-3 py-1.5 border border-brand-black bg-black text-white text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Tất cả tiện ích
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Outdoor Space
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Pet-Friendly
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Co-working / Yên tĩnh
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Car Parking Nearby
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Roastery Lab
-                    </button>
-                    <button
-                        class="px-3 py-1.5 border border-brand-border bg-white text-neutral-800 hover:border-black text-[11px] font-medium tracking-wide uppercase transition-colors">
-                        Free Motor Parking
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- END: SingleHorizontalFilterBar -->
-        <!-- BEGIN: InspirationalVisualCards -->
-        <section class="max-w-[1780px] mx-auto px-6 lg:px-16 py-16 lg:py-24">
-            <div
-                class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-brand-border gap-4">
-                <div>
-
-                    <h2 class="font-space text-2xl lg:text-3xl font-bold tracking-tightest mt-1">Góc Không Gian &amp;
-                        Câu Chuyện Trải Nghiệm</h2>
-                </div>
-                <p class="text-xs text-brand-gray max-w-md">Mỗi điểm đến Every Half là một thực thể kiến trúc gắn kết
-                    nhịp sống địa phương, thiên nhiên và nghệ thuật rang cà phê đương đại.</p>
-            </div>
-            <!-- 3 Columns Story Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Story Card 1 -->
-                <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
-                    <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Đà Lạt - Lê Đại Hành" class="w-full h-full object-cover" src="dalat.png">
-                        <div class="absolute bottom-3 left-3 flex gap-2">
-                            <span
-                                class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#OutdoorSpace</span>
-                            <span
-                                class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#DaLatVibe</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
-                        <div>
-                            <h3 class="font-space text-lg font-bold group-hover:underline">Every Half Đà Lạt - Lê Đại
-                                Hành</h3>
-                            <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                Không gian mở giữa đồi thông mộng mơ và kiến trúc M Village hiện đại. Nơi sương sớm Đà
-                                Lạt hòa quyện cùng hương thơm đậm sâu của các mẻ Arabica Cầu Đất nguyên bản.
-                            </p>
-                        </div>
-                        <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
-                            <span class="font-mono text-brand-gray text-[11px]">19A Lê Đại Hành, Lâm Đồng</span>
-                            <a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black"
-                                href="#card-1">Khám phá →</a>
-                        </div>
-                    </div>
+        <!-- Điểm 3 + 5: không gian nổi bật -->
+        <section aria-labelledby="sp">
+            <h2 class="sec-t" id="sp">Góc không gian nổi bật</h2>
+            <p class="sec-s">Những chi nhánh có không gian riêng để ghé chơi, check-in và gặp gỡ.</p>
+            <div class="stories">
+                <article class="story">
+                    <div class="ph"><img loading="lazy"
+                            src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10976-571531791123606-1791123606.jpg"
+                            alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt"><span class="cap">Góc check-in · Đà
+                            Lạt</span></div>
+                    <h3>Every Half Coffee Roasters Lê Đại Hành - Đà Lạt</h3>
+                    <p>Giữa phố đồi se lạnh, một điểm dừng chân với khu ngồi ngoài trời để uống cà phê thật chậm.</p>
+                    <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                    <button type="button" class="btn ghost" data-album="10036">Xem không gian</button>
                 </article>
-                <!-- Story Card 2 -->
-                <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
-                    <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Hưng Gia - Tân Hưng" class="w-full h-full object-cover" src="ngovan5.png">
-                        <div class="absolute bottom-3 left-3 flex gap-2">
-                            <span
-                                class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#PetFriendly</span>
-                            <span
-                                class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#GreenGarden</span>
-                        </div>
+                <article class="story">
+                    <div class="ph"><img loading="lazy"
+                            src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10350-830481782890683-1782890683.jpg"
+                            alt="Every Half Coffee Roasters - Hưng Gia"><span class="cap">Sân vườn · Hưng Gia</span>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
-                        <div>
-                            <h3 class="font-space text-lg font-bold group-hover:underline">Every Half Hưng Gia &amp; Ngô
-                                Văn Năm</h3>
-                            <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                Sân vườn rợp bóng mát, tràn ngập ánh sáng tự nhiên lý tưởng cho sáng cuối tuần cùng thú
-                                cưng. Kiến trúc kính rộng mở kéo thiên nhiên vào từng ngụm cold brew.
-                            </p>
-                        </div>
-                        <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
-                            <span class="font-mono text-brand-gray text-[11px]">Hưng Gia 4, Q.7, TP.HCM</span>
-                            <a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black"
-                                href="#card-2">Khám phá →</a>
-                        </div>
-                    </div>
+                    <h3>Every Half · Hưng Gia</h3>
+                    <p>Quán cà phê đẹp ở Quận 7 để làm việc buổi sáng hoặc gặp bạn cuối tuần, có khoảng sân vườn để
+                        ngồi.</p>
+                    <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                    <button type="button" class="btn ghost" data-album="10003">Xem không gian</button>
                 </article>
-                <!-- Story Card 3 -->
-                <article class="bg-white border border-brand-border flex flex-col group card-zoom-container">
-                    <div class="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                        <img alt="Every Half Beacon Phan Đăng Lưu" class="w-full h-full object-cover" src="beacon.png">
-                        <div class="absolute bottom-3 left-3 flex gap-2">
-                            <span
-                                class="bg-black/80 backdrop-blur-sm text-white font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#RoasteryLab</span>
-                            <span
-                                class="bg-white/90 text-black font-mono text-[10px] px-2.5 py-1 tracking-wider uppercase">#CraftCoffee</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
-                        <div>
-                            <h3 class="font-space text-lg font-bold group-hover:underline">Minimalist Roastery - Beacon
-                                Phan Đăng Lưu</h3>
-                            <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                Chiêm ngưỡng quy trình rang mẻ mộc mạc và thưởng thức mẻ cà phê mới nguyên bản cùng
-                                barista bậc thầy tại bàn bar tương tác trung tâm.
-                            </p>
-                        </div>
-                        <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs">
-                            <span class="font-mono text-brand-gray text-[11px]">14-16 Phan Đăng Lưu, Gia Định</span>
-                            <a class="font-semibold uppercase tracking-wider text-[11px] group-hover:text-black"
-                                href="#card-3">Khám phá →</a>
-                        </div>
-                    </div>
+                <article class="story">
+                    <div class="ph"><img loading="lazy"
+                            src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10348-231061782890638-1782890638.jpg"
+                            alt="Every Half Coffee Roasters - Beacon"><span class="cap">Roastery · Beacon</span></div>
+                    <h3>Every Half · Beacon</h3>
+                    <p>Nơi bạn thấy cả đoạn đường phía trước ly cà phê: từ hạt xanh, mẻ rang đến tách trên quầy.</p>
+                    <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                    <button type="button" class="btn ghost" data-album="10004">Xem không gian</button>
                 </article>
             </div>
         </section>
-        <!-- END: InspirationalVisualCards -->
-        <!-- BEGIN: StoreCardsGridSection -->
-        <section class="max-w-[1780px] mx-auto px-6 lg:px-16 pb-24" id="store-cards">
-            <div class="flex items-center justify-between pb-6 border-b border-brand-border mb-8">
-                <h2 class="font-space text-2xl font-bold tracking-tight text-brand-black">Danh Sách Cửa Hàng Trực Quan
-                </h2>
-                <div class="flex items-center space-x-2 text-xs font-mono">
-                    <span class="text-brand-gray">Sắp xếp:</span>
-                    <select
-                        class="border-0 bg-transparent py-0 pl-1 pr-6 text-xs font-bold focus:ring-0 cursor-pointer">
-                        <option>Gần bạn nhất</option>
-                        <option>Mới khai trương</option>
-                        <option>Có bãi đỗ ô tô</option>
-                    </select>
-                </div>
-            </div>
-            <!-- Main Grid of Stores -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Store Card 1: Đà Lạt -->
-                <article
-                    class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow"
-                    id="card-1">
-                    <div>
-                        <!-- Image with status badge and index -->
-                        <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
-                            <img alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt"
-                                class="w-full h-full object-cover" src="dalat.png">
-                            <div
-                                class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
-                                <span
-                                    class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
-                                ĐANG MỞ CỬA • 07:00 - 21:30
-                            </div>
-                            <div
-                                class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
-                                1 / 4
-                            </div>
-                        </div>
-                        <!-- Content Details -->
-                        <div class="p-6 space-y-4">
-                            <!-- Amenity Tag Pills -->
-                            <div class="flex flex-wrap gap-1.5">
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Outdoor
-                                    Space</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Pet-Friendly</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Free
-                                    Motor Parking</span>
-                            </div>
-                            <!-- Name & Address -->
-                            <div>
-                                <h3 class="font-space text-lg font-bold uppercase leading-snug">
-                                    Every Half Coffee Roasters - Lê Đại Hành - Đà Lạt
-                                </h3>
-                                <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                    19A Lê Đại Hành, Phường Xuân Hương, TP. Đà Lạt, Tỉnh Lâm Đồng
-                                </p>
-                                <p class="text-[11px] font-mono text-neutral-500 mt-1">
-                                    Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Action Buttons -->
-                    <div class="p-6 pt-0 grid grid-cols-2 gap-3">
-                        <!-- SỬA 1: link Google Maps riêng, tạo từ địa chỉ của quán -->
-                        <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+19A+Lê+Đại+Hành,+Phường+Xuân+Hương,+Đà+Lạt,+Lâm+Đồng"
-                            rel="noopener noreferrer" target="_blank">
-                            Chỉ đường
-                        </a>
-                        <!-- SỬA 2: mở hộp thoại chi tiết (data-store trỏ tới nội dung bài viết trong script cuối trang) -->
-                        <button
-                            class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button" data-store="dalat" data-card="card-1">
-                            Xem không gian
-                        </button>
-                    </div>
-                </article>
-                <!-- Store Card 2: Hưng Gia -->
-                <article
-                    class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow"
-                    id="card-2">
-                    <div>
-                        <!-- Image with status badge and index -->
-                        <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
-                            <img alt="Every Half Coffee Roasters Hưng Gia" class="w-full h-full object-cover"
-                                src="hunggia.png">
-                            <div
-                                class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
-                                <span
-                                    class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
-                                ĐANG MỞ CỬA • 07:00 - 21:30
-                            </div>
-                            <div
-                                class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
-                                1 / 3
-                            </div>
-                        </div>
-                        <!-- Content Details -->
-                        <div class="p-6 space-y-4">
-                            <!-- Amenity Tag Pills -->
-                            <div class="flex flex-wrap gap-1.5">
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Outdoor
-                                    Space</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Car
-                                    Parking Nearby</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Co-working
-                                    Friendly</span>
-                            </div>
-                            <!-- Name & Address -->
-                            <div>
-                                <h3 class="font-space text-lg font-bold uppercase leading-snug">
-                                    Every Half Coffee Roasters - Hưng Gia
-                                </h3>
-                                <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                    48 Đ. Nội Khu Hưng Gia 4, Tân Hưng, Quận 7, TP. Hồ Chí Minh
-                                </p>
-                                <p class="text-[11px] font-mono text-neutral-500 mt-1">
-                                    Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Action Buttons -->
-                    <div class="p-6 pt-0 grid grid-cols-2 gap-3">
-                        <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+48+Nội+Khu+Hưng+Gia+4,+Tân+Hưng,+Quận+7,+Thành+phố+Hồ+Chí+Minh"
-                            rel="noopener noreferrer" target="_blank">
-                            Chỉ đường
-                        </a>
-                        <button
-                            class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button" data-store="hunggia" data-card="card-2">
-                            Xem không gian
-                        </button>
-                    </div>
-                </article>
-                <!-- Store Card 3: Beacon Phan Đăng Lưu -->
-                <article
-                    class="border border-brand-border bg-white flex flex-col justify-between hover:shadow-md transition-shadow"
-                    id="card-3">
-                    <div>
-                        <!-- Image with status badge and index -->
-                        <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
-                            <img alt="Every Half Coffee Roasters Beacon" class="w-full h-full object-cover"
-                                src="beacon.png">
-                            <div
-                                class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider uppercase border border-neutral-200">
-                                <span
-                                    class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 align-middle"></span>
-                                ĐANG MỞ CỬA • 07:00 - 21:30
-                            </div>
-                            <div
-                                class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-0.5 text-[10px] font-mono tracking-wider">
-                                1 / 5
-                            </div>
-                        </div>
-                        <!-- Content Details -->
-                        <div class="p-6 space-y-4">
-                            <!-- Amenity Tag Pills -->
-                            <div class="flex flex-wrap gap-1.5">
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Roastery
-                                    Lab</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Air
-                                    Conditioned</span>
-                                <span
-                                    class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">Free
-                                    Motor Parking</span>
-                            </div>
-                            <!-- Name & Address -->
-                            <div>
-                                <h3 class="font-space text-lg font-bold uppercase leading-snug">
-                                    Every Half Coffee Roasters - Beacon
-                                </h3>
-                                <p class="text-xs text-brand-gray mt-2 leading-relaxed">
-                                    14-16 Phan Đăng Lưu, Phường 6, Quận Bình Thạnh, TP. Hồ Chí Minh
-                                </p>
-                                <p class="text-[11px] font-mono text-neutral-500 mt-1">
-                                    Giờ hoạt động: 07:00 - 21:30 (Mỗi ngày)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Action Buttons -->
-                    <div class="p-6 pt-0 grid grid-cols-2 gap-3">
-                        <a class="py-2.5 text-center bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors"
-                            href="https://www.google.com/maps/search/?api=1&query=Every+Half+Coffee+Roasters,+14-16+Phan+Đăng+Lưu,+Phường+6,+Quận+Bình+Thạnh,+Thành+phố+Hồ+Chí+Minh"
-                            rel="noopener noreferrer" target="_blank">
-                            Chỉ đường
-                        </a>
-                        <button
-                            class="py-2.5 text-center border border-black text-black text-xs font-semibold tracking-wider uppercase hover:bg-black hover:text-white transition-colors"
-                            type="button" data-store="beacon" data-card="card-3">
-                            Xem không gian
-                        </button>
-                    </div>
-                </article>
-            </div>
-            <!-- Pagination or Load More Minimalist Element -->
-            <div
-                class="mt-14 pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span class="text-xs text-brand-gray font-mono">Hiển thị 3 trên 43 cửa hàng đang hoạt động</span>
-                <button
-                    class="px-8 py-3 border border-brand-black text-xs font-semibold tracking-widest uppercase hover:bg-black hover:text-white transition-colors">
-                    Xem thêm 40 cửa hàng khác
-                </button>
-            </div>
+        <!-- Điểm 2: một thanh lọc duy nhất -->
+        <section class="filters" aria-label="Bộ lọc cửa hàng">
+            <div class="row" id="regions"><button type="button" class="tab on" data-region="0">Tất cả
+                    (44)</button><button type="button" class="tab" data-region="88879">Thành phố Hồ Chí Minh
+                    (35)</button><button type="button" class="tab" data-region="88801">Thành phố Hà Nội
+                    (6)</button><button type="button" class="tab" data-region="88848">Thành phố Đà Nẵng
+                    (2)</button><button type="button" class="tab" data-region="88868">Tỉnh Lâm Đồng (1)</button></div>
+            <div class="row"><span class="lab">Không gian &amp; tiện ích</span><span id="chips" class="row"
+                    style="gap:8px"><button type="button" class="chip" data-attr="outdoor">OUTDOOR-SPACE
+                        <i>(15)</i></button><button type="button" class="chip" data-attr="pet">PET-FRIENDLY
+                        <i>(33)</i></button><button type="button" class="chip" data-attr="roastery">ROASTERY
+                        <i>(1)</i></button></span><span class="count" id="count">Hiển thị 44 / 44 cửa hàng</span></div>
         </section>
-        <!-- END: StoreCardsGridSection -->
+        <!-- Điểm 1: thẻ có bộ 3 nút -->
+        <section class="grid" id="list">
+            <article class="store" data-id="10003" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10350-830481782890683-1782890683.jpg"
+                        alt="Every Half Coffee Roasters - Hưng Gia"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Hưng Gia</h2>
+                <p class="addr">48 Đ. Nội Khu Hưng Gia 4, II, Tân Hưng, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20H%C6%B0ng%20Gia%2C%2048%20%C4%90.%20N%E1%BB%99i%20Khu%20H%C6%B0ng%20Gia%204%2C%20II%2C%20T%C3%A2n%20H%C6%B0ng%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10003" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10004" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10348-231061782890638-1782890638.jpg"
+                        alt="Every Half Coffee Roasters - Beacon"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Beacon</h2>
+                <p class="addr">14-16 Phan Đăng Lưu, Gia Định, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Beacon%2C%2014-16%20Phan%20%C4%90%C4%83ng%20L%C6%B0u%2C%20Gia%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10004" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10005" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10278-322201782711761-1782711761.jpg"
+                        alt="Every Half Coffee Roasters - Centec"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Centec</h2>
+                <p class="addr">Hẻm 145 Hai Bà Trưng, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Centec%2C%20H%E1%BA%BBm%20145%20Hai%20B%C3%A0%20Tr%C6%B0ng%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10005" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10006" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10346-773071782890586-1782890586.jpg"
+                        alt="Every Half Coffee Roasters - Vinhomes Central Park"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Vinhomes Central Park</h2>
+                <p class="addr">208 Nguyễn Hữu Cảnh, Phường, Thạnh Mỹ Tây, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Vinhomes%20Central%20Park%2C%20208%20Nguy%E1%BB%85n%20H%E1%BB%AFu%20C%E1%BA%A3nh%2C%20Ph%C6%B0%E1%BB%9Dng%2C%20Th%E1%BA%A1nh%20M%E1%BB%B9%20T%C3%A2y%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10006" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10007" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10344-135231782890492-1782890492.jpg"
+                        alt="Every Half Coffee Roasters - Centre Point"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Centre Point</h2>
+                <p class="addr">241 Nguyễn Trọng Tuyển, Phú Nhuận, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Centre%20Point%2C%20241%20Nguy%E1%BB%85n%20Tr%E1%BB%8Dng%20Tuy%E1%BB%83n%2C%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10007" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10008" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10342-770611782890459-1782890459.jpg"
+                        alt="Every Half Coffee Roasters - Hồ Con Rùa"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Hồ Con Rùa</h2>
+                <p class="addr">10 Công trường Quốc Tế, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20H%E1%BB%93%20Con%20R%C3%B9a%2C%2010%20C%C3%B4ng%20tr%C6%B0%E1%BB%9Dng%20Qu%E1%BB%91c%20T%E1%BA%BF%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10008" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10009" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10341-649691782890432-1782890432.jpg"
+                        alt="Every Half Coffee Roasters - Endovina"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Endovina</h2>
+                <p class="addr">146 Nguyễn Đình Chiểu, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Endovina%2C%20146%20Nguy%E1%BB%85n%20%C4%90%C3%ACnh%20Chi%E1%BB%83u%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10009" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10010" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10339-596521782890404-1782890404.jpg"
+                        alt="Every Half Coffee Roasters - Đồng Khởi"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Đồng Khởi</h2>
+                <p class="addr">8 - 24 Ngô Đức Kế, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20%C4%90%E1%BB%93ng%20Kh%E1%BB%9Fi%2C%208%20-%2024%20Ng%C3%B4%20%C4%90%E1%BB%A9c%20K%E1%BA%BF%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10010" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10011" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10337-528741782890370-1782890370.jpg"
+                        alt="Every Half Coffee Roasters - Midtown"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Midtown</h2>
+                <p class="addr">Lô M8 Midtown, Phú Mỹ Hưng, Tân Mỹ, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Midtown%2C%20L%C3%B4%20M8%20Midtown%2C%20Ph%C3%BA%20M%E1%BB%B9%20H%C6%B0ng%2C%20T%C3%A2n%20M%E1%BB%B9%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10011" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10012" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10335-903401782890338-1782890338.jpg"
+                        alt="Every Half Coffee Roasters - mPlaza"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - mPlaza</h2>
+                <p class="addr">mPlaza, 39 Lê Duẩn, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20mPlaza%2C%20mPlaza%2C%2039%20L%C3%AA%20Du%E1%BA%A9n%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10012" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10013" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10333-933431782890291-1782890291.jpg"
+                        alt="Every Half Coffee Roasters - Le Jardin Nam Phúc"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Le Jardin Nam Phúc</h2>
+                <p class="addr">K.phố Nam Phúc, Le Jardin, Đường C, Tân Mỹ, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Le%20Jardin%20Nam%20Ph%C3%BAc%2C%20K.ph%E1%BB%91%20Nam%20Ph%C3%BAc%2C%20Le%20Jardin%2C%20%C4%90%C6%B0%E1%BB%9Dng%20C%2C%20T%C3%A2n%20M%E1%BB%B9%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10013" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10014" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10331-142941782890257-1782890257.jpg"
+                        alt="Every Half Coffee Roasters - Phan Văn Trị"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Phan Văn Trị</h2>
+                <p class="addr">467 Đ. Phan Văn Trị, An Nhơn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Phan%20V%C4%83n%20Tr%E1%BB%8B%2C%20467%20%C4%90.%20Phan%20V%C4%83n%20Tr%E1%BB%8B%2C%20An%20Nh%C6%A1n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10014" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10015" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10329-774671782890228-1782890228.jpg"
+                        alt="Every Half Coffee Roasters - Saigon Pearl"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Saigon Pearl</h2>
+                <p class="addr">92 Nguyễn Hữu Cảnh, phường, Thạnh Mỹ Tây, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Saigon%20Pearl%2C%2092%20Nguy%E1%BB%85n%20H%E1%BB%AFu%20C%E1%BA%A3nh%2C%20ph%C6%B0%E1%BB%9Dng%2C%20Th%E1%BA%A1nh%20M%E1%BB%B9%20T%C3%A2y%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10015" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10016" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10327-177941782890196-1782890196.jpg"
+                        alt="Every Half Coffee Roasters - Saigon Tower"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Saigon Tower</h2>
+                <p class="addr">29 Lê Duẩn, Phường, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Saigon%20Tower%2C%2029%20L%C3%AA%20Du%E1%BA%A9n%2C%20Ph%C6%B0%E1%BB%9Dng%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10016" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10017" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10303-567551782794053-1782794053.jpg"
+                        alt="Every Half Coffee Roasters - Sala"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Sala</h2>
+                <p class="addr">Chung Cư C1, Tầng 01,02, Khu III/Tháp A/62 Đ. Hoàng Thế Thiện, An Khánh, Hồ Chí Minh
+                    70000, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Sala%2C%20Chung%20C%C6%B0%20C1%2C%20T%E1%BA%A7ng%2001%2C02%2C%20Khu%20III/Th%C3%A1p%20A/62%20%C4%90.%20Ho%C3%A0ng%20Th%E1%BA%BF%20Thi%E1%BB%87n%2C%20An%20Kh%C3%A1nh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2070000%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10017" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10018" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10326-717581782890141-1782890141.jpg"
+                        alt="Every Half Coffee Roasters - Tôn Đức Thắng"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Tôn Đức Thắng</h2>
+                <p class="addr">2A-4A Tôn Đức Thắng, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%2C%202A-4A%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10018" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10019" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10307-590111782795291-1782795291.jpg"
+                        alt="Every Half Coffee Roasters - Somerset"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Somerset</h2>
+                <p class="addr">21-23 Nguyễn Thị Minh Khai, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Somerset%2C%2021-23%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Minh%20Khai%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10019" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10020" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="1"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10309-292331782796164-1782796164.jpg"
+                        alt="Every Half Roastery Thảo Điền"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span><span
+                        class="tag">Roastery</span></div>
+                <h2>Every Half Roastery Thảo Điền</h2>
+                <p class="addr">01 Đ. Số 10, Quận 2, An Khánh, Hồ Chí Minh 70000, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Roastery%20Th%E1%BA%A3o%20%C4%90i%E1%BB%81n%2C%2001%20%C4%90.%20S%E1%BB%91%2010%2C%20Qu%E1%BA%ADn%202%2C%20An%20Kh%C3%A1nh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2070000%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10020" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10021" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10324-812001782889968-1782889969.jpg"
+                        alt="Every Half Coffee Roasters - Infiniti"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Infiniti</h2>
+                <p class="addr">2 Nguyễn Văn Tưởng, Tân Mỹ, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Infiniti%2C%202%20Nguy%E1%BB%85n%20V%C4%83n%20T%C6%B0%E1%BB%9Fng%2C%20T%C3%A2n%20M%E1%BB%B9%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10021" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10022" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10323-821941782889943-1782889943.jpg"
+                        alt="Every Half Coffee Roasters - Thi Sách"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Thi Sách</h2>
+                <p class="addr">26 Thi Sách, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Thi%20S%C3%A1ch%2C%2026%20Thi%20S%C3%A1ch%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10022" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10023" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/June/10316-892131782797416-1782797416.jpg"
+                        alt="Every Half Coffee Roasters - Tống Hữu Định"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Tống Hữu Định</h2>
+                <p class="addr">36 Tống Hữu Định, An Khánh, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20T%E1%BB%91ng%20H%E1%BB%AFu%20%C4%90%E1%BB%8Bnh%2C%2036%20T%E1%BB%91ng%20H%E1%BB%AFu%20%C4%90%E1%BB%8Bnh%2C%20An%20Kh%C3%A1nh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10023" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10024" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10373-117271783656578-1783656578.jpg"
+                        alt="Every Half Coffee Roasters - Trương Định"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Trương Định</h2>
+                <p class="addr">14 Trương Định, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Tr%C6%B0%C6%A1ng%20%C4%90%E1%BB%8Bnh%2C%2014%20Tr%C6%B0%C6%A1ng%20%C4%90%E1%BB%8Bnh%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10024" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10025" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10321-677381782889846-1782889846.jpg"
+                        alt="Every Half Coffee Roasters - Tú Xương"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Tú Xương</h2>
+                <p class="addr">6E Tú Xương, P, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20T%C3%BA%20X%C6%B0%C6%A1ng%2C%206E%20T%C3%BA%20X%C6%B0%C6%A1ng%2C%20P%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10025" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10026" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10353-326871782891049-1782891049.jpg"
+                        alt="Every Half Coffee Roasters - Hoàng Văn Thái"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Hoàng Văn Thái</h2>
+                <p class="addr">Tòa IMV, Lô CR3-2 tầng G và tầng M, 87 Hoàng Văn Thái, Tân Mỹ, Hồ Chí Minh 70000,
+                    Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ho%C3%A0ng%20V%C4%83n%20Th%C3%A1i%2C%20T%C3%B2a%20IMV%2C%20L%C3%B4%20CR3-2%20t%E1%BA%A7ng%20G%20v%C3%A0%20t%E1%BA%A7ng%20M%2C%2087%20Ho%C3%A0ng%20V%C4%83n%20Th%C3%A1i%2C%20T%C3%A2n%20M%E1%BB%B9%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2070000%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10026" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10027" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10354-498001782892085-1782892085.jpg"
+                        alt="Every Half Coffee Roasters - The Hallmark"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - The Hallmark</h2>
+                <p class="addr">Cổng C, 15 Đ. Trần Bạch Đằng, An Khánh, Hồ Chí Minh 70000, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20The%20Hallmark%2C%20C%E1%BB%95ng%20C%2C%2015%20%C4%90.%20Tr%E1%BA%A7n%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng%2C%20An%20Kh%C3%A1nh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2070000%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10027" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10028" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10356-243691782892193-1782892193.jpg"
+                        alt="Every Half Coffee Roasters - Ngô Văn Năm"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Ngô Văn Năm</h2>
+                <p class="addr">19A Ngô Văn Năm, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ng%C3%B4%20V%C4%83n%20N%C4%83m%2C%2019A%20Ng%C3%B4%20V%C4%83n%20N%C4%83m%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10028" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10029" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10359-568581782894944-1782894944.jpg"
+                        alt="Every Half Coffee Roasters - Nguyễn Văn Thủ"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Nguyễn Văn Thủ</h2>
+                <p class="addr">217 Nguyễn Văn Thủ, Tân Định, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Nguy%E1%BB%85n%20V%C4%83n%20Th%E1%BB%A7%2C%20217%20Nguy%E1%BB%85n%20V%C4%83n%20Th%E1%BB%A7%2C%20T%C3%A2n%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10029" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10030" data-region="88879" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10362-805261782895052-1782895052.jpg"
+                        alt="Every Half Coffee Roasters - Pasteur"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Pasteur</h2>
+                <p class="addr">34 Pasteur, Sài Gòn, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Pasteur%2C%2034%20Pasteur%2C%20S%C3%A0i%20G%C3%B2n%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10030" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10031" data-region="88879" data-outdoor="0" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10364-163481782896297-1782896297.jpg"
+                        alt="Every Half Coffee Roasters - Phạm Ngọc Thạch"></div>
+                <div class="tags"></div>
+                <h2>Every Half Coffee Roasters - Phạm Ngọc Thạch</h2>
+                <p class="addr">32 Phạm Ngọc Thạch, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ph%E1%BA%A1m%20Ng%E1%BB%8Dc%20Th%E1%BA%A1ch%2C%2032%20Ph%E1%BA%A1m%20Ng%E1%BB%8Dc%20Th%E1%BA%A1ch%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10031" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10032" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10367-926671782896525-1782896525.jpg"
+                        alt="Every Half Coffee Roasters - Võ Thị Sáu"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Võ Thị Sáu</h2>
+                <p class="addr">232/23 Võ Thị Sáu, Xuân Hòa, Hồ Chí Minh, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u%2C%20232/23%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u%2C%20Xu%C3%A2n%20H%C3%B2a%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10032" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10033" data-region="88801" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10369-347541782897686-1782897686.jpg"
+                        alt="Every Half Coffee Roasters - Ngọc Hà"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Ngọc Hà</h2>
+                <p class="addr">19C P. Ngọc Hà, Ba Đình, Hà Nội, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ng%E1%BB%8Dc%20H%C3%A0%2C%2019C%20P.%20Ng%E1%BB%8Dc%20H%C3%A0%2C%20Ba%20%C4%90%C3%ACnh%2C%20H%C3%A0%20N%E1%BB%99i%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10033" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10034" data-region="88848" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10371-622021783067937-1783067937.jpg"
+                        alt="Every Half Coffee Roasters - Làng Lụa Hội An"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Làng Lụa Hội An</h2>
+                <p class="addr">28 Nguyễn Tất Thành, Hội An Tây, Đà Nẵng, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20L%C3%A0ng%20L%E1%BB%A5a%20H%E1%BB%99i%20An%2C%2028%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%2C%20H%E1%BB%99i%20An%20T%C3%A2y%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10034" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10035" data-region="88801" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:30 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10375-609491783656945-1783656945.jpg"
+                        alt="Every Half Coffee Roasters - Châu Long"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Châu Long</h2>
+                <p class="addr">34 P. Châu Long, Ba Đình, Hà Nội, Vietnam</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:30 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ch%C3%A2u%20Long%2C%2034%20P.%20Ch%C3%A2u%20Long%2C%20Ba%20%C4%90%C3%ACnh%2C%20H%C3%A0%20N%E1%BB%99i%2C%20Vietnam"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10035" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10036" data-region="88868" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10976-571531791123606-1791123606.jpg"
+                        alt="Every Half Coffee Roasters Lê Đại Hành - Đà Lạt"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters Lê Đại Hành - Đà Lạt</h2>
+                <p class="addr">19a Lê Đại Hành, Xuân Hương - Đà Lạt, Lâm Đồng</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%2019a%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%2C%20Xu%C3%A2n%20H%C6%B0%C6%A1ng%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10036" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10037" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10977-692391791123767-1791123767.jpg"
+                        alt="Every Half Coffee Roasters - Celadon"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Celadon</h2>
+                <p class="addr">Shophouse S2.0.13 Diamond Alnata Plus, Celadon City, Tan Phu District, HCMC</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Celadon%2C%20Shophouse%20S2.0.13%20Diamond%20Alnata%20Plus%2C%20Celadon%20City%2C%20Tan%20Phu%20District%2C%20HCMC"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10037" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10038" data-region="88879" data-outdoor="1" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10978-609171791123913-1791123913.jpg"
+                        alt="Every Half Coffee Roasters - Hoa Mai"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span></div>
+                <h2>Every Half Coffee Roasters - Hoa Mai</h2>
+                <p class="addr">27 Hoa Mai, Phường Cầu Kiệu, TP. HCM</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Hoa%20Mai%2C%2027%20Hoa%20Mai%2C%20Ph%C6%B0%E1%BB%9Dng%20C%E1%BA%A7u%20Ki%E1%BB%87u%2C%20TP.%20HCM"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10038" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10039" data-region="88879" data-outdoor="1" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10979-548171791124014-1791124014.jpg"
+                        alt="Every Half Coffee Roasters - Nguyễn Thị Diệu"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span></div>
+                <h2>Every Half Coffee Roasters - Nguyễn Thị Diệu</h2>
+                <p class="addr">38A Nguyễn Thị Diệu, P. Xuân Hoà, TP. HCM</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Di%E1%BB%87u%2C%2038A%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Di%E1%BB%87u%2C%20P.%20Xu%C3%A2n%20Ho%C3%A0%2C%20TP.%20HCM"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10039" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10040" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10981-352621791124172-1791124172.jpg"
+                        alt="Every Half Coffee Roasters - Bến Văn Đồn"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Bến Văn Đồn</h2>
+                <p class="addr">243 Bến Văn Đồn, Phường Vĩnh Hội, TP. HCM</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20B%E1%BA%BFn%20V%C4%83n%20%C4%90%E1%BB%93n%2C%20243%20B%E1%BA%BFn%20V%C4%83n%20%C4%90%E1%BB%93n%2C%20Ph%C6%B0%E1%BB%9Dng%20V%C4%A9nh%20H%E1%BB%99i%2C%20TP.%20HCM"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10040" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10041" data-region="88801" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10982-493171791124277-1791124277.jpg"
+                        alt="Every Half Coffee Roasters - Phố Chả Cá"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Phố Chả Cá</h2>
+                <p class="addr">6B P. Chả Cá, Hoàn Kiếm, Hà Nội</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Ph%E1%BB%91%20Ch%E1%BA%A3%20C%C3%A1%2C%206B%20P.%20Ch%E1%BA%A3%20C%C3%A1%2C%20Ho%C3%A0n%20Ki%E1%BA%BFm%2C%20H%C3%A0%20N%E1%BB%99i"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10041" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10042" data-region="88801" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10983-412431791124366-1791124366.jpg"
+                        alt="Every Half Coffee Roasters - Times City"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Times City</h2>
+                <p class="addr">SH05 Park 11, Khu đô thị Times City, Vĩnh Tuy, Hà Nội</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Times%20City%2C%20SH05%20Park%2011%2C%20Khu%20%C4%91%C3%B4%20th%E1%BB%8B%20Times%20City%2C%20V%C4%A9nh%20Tuy%2C%20H%C3%A0%20N%E1%BB%99i"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10042" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10043" data-region="88848" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10984-434991791124649-1791124649.webp"
+                        alt="Every Half Coffee Roasters - Vincom Đà Nẵng"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Vincom Đà Nẵng</h2>
+                <p class="addr">910A Ng. Quyền, An Hải, Đà Nẵng</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Vincom%20%C4%90%C3%A0%20N%E1%BA%B5ng%2C%20910A%20Ng.%20Quy%E1%BB%81n%2C%20An%20H%E1%BA%A3i%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10043" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10044" data-region="88801" data-outdoor="0" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10985-732441791124761-1791124761.jpg"
+                        alt="Every Half Coffee Roasters - Bưu Điện Hà Nội"></div>
+                <div class="tags"><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Bưu Điện Hà Nội</h2>
+                <p class="addr">10 P. Lê Thạch, French Quarter, Hoàn Kiếm, Hà Nội</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20B%C6%B0u%20%C4%90i%E1%BB%87n%20H%C3%A0%20N%E1%BB%99i%2C%2010%20P.%20L%C3%AA%20Th%E1%BA%A1ch%2C%20French%20Quarter%2C%20Ho%C3%A0n%20Ki%E1%BA%BFm%2C%20H%C3%A0%20N%E1%BB%99i"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10044" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10045" data-region="88879" data-outdoor="1" data-pet="1" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10986-966261791124924-1791124924.jpg"
+                        alt="Every Half Coffee Roasters - Nguyễn Văn Thương"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span><span class="tag">Pet-Friendly</span></div>
+                <h2>Every Half Coffee Roasters - Nguyễn Văn Thương</h2>
+                <p class="addr">75 Nguyễn Văn Thương, Thạnh Mỹ Tây, Hồ Chí Minh</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Nguy%E1%BB%85n%20V%C4%83n%20Th%C6%B0%C6%A1ng%2C%2075%20Nguy%E1%BB%85n%20V%C4%83n%20Th%C6%B0%C6%A1ng%2C%20Th%E1%BA%A1nh%20M%E1%BB%B9%20T%C3%A2y%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10045" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+            <article class="store" data-id="10046" data-region="88801" data-outdoor="1" data-pet="0" data-roastery="0"
+                data-hours="07:00 - 21:30">
+                <div class="ph"><img loading="lazy"
+                        src="https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10988-980521791601715-1791601715.jpeg"
+                        alt="Every Half Coffee Roasters - Hanoi Tower Thợ Nhuộm"></div>
+                <div class="tags"><span class="tag">Outdoor-Space</span></div>
+                <h2>Every Half Coffee Roasters - Hanoi Tower Thợ Nhuộm</h2>
+                <p class="addr">69 Phố Thợ Nhuộm, Phường Cửa Nam, Hà Nội</p>
+                <p class="hrs"><span>Giờ mở cửa: 07:00 - 21:30</span> <b class="st"></b></p>
+                <div class="cta">
+                    <a class="btn primary"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Every%20Half%20Coffee%20Roasters%20-%20Hanoi%20Tower%20Th%E1%BB%A3%20Nhu%E1%BB%99m%2C%2069%20Ph%E1%BB%91%20Th%E1%BB%A3%20Nhu%E1%BB%99m%2C%20Ph%C6%B0%E1%BB%9Dng%20C%E1%BB%ADa%20Nam%2C%20H%C3%A0%20N%E1%BB%99i"
+                        target="_blank" rel="noopener">Chỉ đường</a>
+                    <a class="btn call" data-call="10046" aria-disabled="true">Gọi cửa hàng</a>
+                    <a class="btn ghost wide" href="https://everyhalf.vn/product" target="_blank" rel="noopener">Xem
+                        Menu &amp; Đặt hàng</a>
+                </div>
+            </article>
+        </section>
+        <p class="empty" id="empty">Không tìm thấy cửa hàng phù hợp</p>
     </main>
-    <!-- END: MainContent -->
-
-    <!-- BEGIN: SpaceDialog -->
-    <dialog id="space-dialog"
-        class="p-0 backdrop:bg-black/60 rounded-none max-w-2xl w-[calc(100%-2rem)] border border-brand-border bg-white shadow-2xl overflow-hidden text-brand-black backdrop:backdrop-blur-sm">
-        <div class="relative max-h-[88vh] overflow-y-auto flex flex-col">
-            <button id="sd-close-x" type="button"
-                class="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black transition-colors"
-                aria-label="Đóng">
-                ✕
-            </button>
-            <div class="aspect-[16/9] bg-neutral-100 overflow-hidden shrink-0">
-                <img id="sd-img" class="w-full h-full object-cover" src="" alt="">
-            </div>
-            <div class="p-6 space-y-5 flex-grow">
-                <div>
-                    <p id="sd-store" class="text-[11px] font-mono tracking-widest uppercase text-neutral-500 font-bold">
-                    </p>
-                    <h3 id="sd-title" class="font-space text-xl font-bold mt-1 text-black leading-snug"></h3>
+    <dialog id="dlg">
+        <div class="dl"><button class="close" id="dx2" type="button" aria-label="Đóng">✕</button>
+            <div class="photos" id="dp"></div>
+            <div class="body"><span class="lab" id="dt"></span>
+                <h3 id="dn"></h3>
+                <p class="lede" id="ds"></p>
+                <div id="sb"></div>
+                <div class="tipbox"><span class="lab">Gợi ý từ Every Half</span>
+                    <p id="tp"></p>
                 </div>
-                <p id="sd-lede"
-                    class="text-xs text-neutral-700 leading-relaxed italic border-l-2 border-black pl-3 py-0.5 bg-neutral-50">
-                </p>
-                <div id="sd-body" class="space-y-3 pt-1 border-t border-gray-100"></div>
-                <div class="p-3 bg-brand-lightGray border border-neutral-200 text-xs">
-                    <span class="font-bold text-black font-mono uppercase text-[10px] block mb-0.5">Gợi ý từ Every
-                        Half</span>
-                    <p id="sd-tip" class="text-neutral-700 text-xs leading-relaxed"></p>
-                </div>
-                <div class="pt-2 border-t border-brand-border space-y-3">
-                    <div id="sd-tags" class="flex flex-wrap gap-1.5"></div>
-                    <p id="sd-addr" class="text-xs text-brand-gray font-mono"></p>
-                </div>
+                <p class="addr" id="da"></p>
+                <div class="tags" id="dg"></div>
             </div>
-            <div class="p-4 bg-white border-t border-brand-border flex items-center justify-between gap-3 shrink-0">
-                <a id="sd-map" href="" target="_blank" rel="noopener noreferrer"
-                    class="px-5 py-2.5 bg-black text-white text-xs font-semibold tracking-wider uppercase hover:bg-neutral-800 transition-colors text-center flex-grow sm:flex-grow-0">
-                    Mở trên Google Maps ↗
-                </a>
-                <button id="sd-close" type="button"
-                    class="px-5 py-2.5 border border-brand-border text-xs font-semibold tracking-wider uppercase hover:border-black transition-colors">
-                    Đóng
-                </button>
-            </div>
+            <div class="foot"><a class="btn primary" id="dm" target="_blank" rel="noopener">Chỉ đường</a><button
+                    class="btn ghost" id="dx" type="button">Đóng</button></div>
         </div>
     </dialog>
-    <!-- END: SpaceDialog -->
-
-    <!-- BEGIN: SiteFooter -->
-    <footer class="bg-white border-t border-brand-border pt-16 pb-12">
-        <div class="max-w-[1780px] mx-auto px-6 lg:px-16">
-            <!-- Upper Section: Logo and Links -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14">
-                <!-- Large Geometric EH Brand Icon -->
-                <div class="md:col-span-3">
-                    <img alt="Every Half Coffee Roasters Logo" class="w-20 h-auto" src="logomini.png">
-                    <p class="mt-6 text-xs text-brand-gray leading-relaxed max-w-xs">
-                        Every Half Coffee Roasters tôn vinh hương vị mộc bản, kết nối cộng đồng yêu cà phê đặc sản thông
-                        qua kiến trúc tinh tế và trải nghiệm chân thực.
-                    </p>
-                </div>
-                <!-- Links Columns Grid -->
-                <div
-                    class="md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-[11px] tracking-wider uppercase">
-                    <!-- Column 1: ABOUT EVERYHALF -->
-                    <div class="space-y-3.5">
-                        <h4 class="font-bold text-black font-space tracking-widest text-xs">ABOUT EVERYHALF</h4>
-                        <ul class="space-y-2.5 text-brand-gray font-medium">
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Sustainability</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">People in EH</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Our Stores</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">New Crop</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 2: PRODUCTS -->
-                    <div class="space-y-3.5">
-                        <h4 class="font-bold text-black font-space tracking-widest text-xs">PRODUCTS</h4>
-                        <ul class="space-y-2.5 text-brand-gray font-medium">
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Our Coffee</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Merchandise</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Gift &amp; Bundles</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Column 3: JOURNAL -->
-                    <div class="space-y-3.5">
-                        <h4 class="font-bold text-black font-space tracking-widest text-xs">JOURNAL</h4>
-                        <ul class="space-y-2.5 text-brand-gray font-medium">
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Coffee Info</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">News</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Process</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Brew Guide</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 4: POLICY -->
-                    <div class="space-y-3.5">
-                        <h4 class="font-bold text-black font-space tracking-widest text-xs">POLICY</h4>
-                        <ul class="space-y-2.5 text-brand-gray font-medium">
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Hướng dẫn xoá tài
-                                    khoản</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Điều khoản &amp; Điều
-                                    kiện</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Bảo mật thông tin</a>
-                            </li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Phương thức thanh
-                                    toán</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 5: SOCIAL -->
-                    <div class="space-y-3.5">
-                        <h4 class="font-bold text-black font-space tracking-widest text-xs">SOCIAL</h4>
-                        <ul class="space-y-2.5 text-brand-gray font-medium">
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Facebook</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Instagram</a></li>
-                            <li class=""><a class="hover:text-black transition-colors" href="#">Spotify Playlist</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Bottom Legal & Copyright -->
-            <div
-                class="pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-gray gap-4">
-                <div class="">
-                    © 2024 Every Half Coffee Roasters. All rights reserved.
-                </div>
-                <div class="flex items-center space-x-6 text-[10px] tracking-wider uppercase font-mono">
-                    <span class="">Designed with Precision</span>
-                    <span class="">•</span>
-                    <span class="">Roasting Since 2021</span>
-                </div>
-            </div>
+    <footer>
+        <div class="wrap">
+            <div class="links"><a href="https://everyhalf.vn/about-us">About Everyhalf</a><a
+                    href="https://everyhalf.vn/location">Our stores</a><a
+                    href="https://everyhalf.vn/product">Products</a><a href="https://everyhalf.vn/news">Journal</a><a
+                    href="https://www.facebook.com/everyhalf/">Facebook</a><a
+                    href="https://www.instagram.com/everyhalf.coffeeroasters/">Instagram</a></div>
+            CÔNG TY CỔ PHẦN EVERY HALF BEAN<br>Giấy chứng nhận Đăng ký doanh nghiệp số 0316718291 do Sở Kế hoạch và Đầu
+            tư cấp ngày 22/02/2021<br>Trụ sở: 232/15 Võ Thị Sáu, Phường Xuân Hòa, Thành phố Hồ Chí Minh, Việt Nam
         </div>
     </footer>
-    <!-- END: SiteFooter -->
-    <!-- BEGIN: InteractiveScripts -->
-    <script data-purpose="filter-tab-behavior">
-        // Interactive filter tab highlight toggling
-        document.addEventListener('DOMContentLoaded', () => {
-            const cityButtons = document.querySelectorAll('[role="tablist"] button');
-            cityButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    cityButtons.forEach(b => {
-                        b.classList.remove('bg-brand-black', 'text-white');
-                        b.classList.add('bg-brand-lightGray', 'text-brand-black');
-                    });
-                    btn.classList.remove('bg-brand-lightGray', 'text-brand-black');
-                    btn.classList.add('bg-brand-black', 'text-white');
-                });
-            });
+    <script>
+        /* Số điện thoại từng cửa hàng: dữ liệu gốc CHƯA có. Điền theo mẫu { "10036": "0900000000" } để nút "Gọi cửa hàng" hoạt động. */
+        const PHONES = {};
+        /* Ảnh bổ sung cho album từng chi nhánh nổi bật (đường dẫn ảnh của nhóm), ví dụ { "10036": ["images/dalat-2.jpg"] } */
+        const ALBUM_EXTRA = {};
+        const FEAT_DATA = { "10003": { "n": "Every Half Coffee Roasters - Hưng Gia", "a": "48 Đ. Nội Khu Hưng Gia 4, II, Tân Hưng, Hồ Chí Minh, Vietnam", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10350-830481782890683-1782890683.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20-%20H%C6%B0ng%20Gia%2C%2048%20%C4%90.%20N%E1%BB%99i%20Khu%20H%C6%B0ng%20Gia%204%2C%20II%2C%20T%C3%A2n%20H%C6%B0ng%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam", "t": ["Pet-Friendly"] }, "10004": { "n": "Every Half Coffee Roasters - Beacon", "a": "14-16 Phan Đăng Lưu, Gia Định, Hồ Chí Minh, Vietnam", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10348-231061782890638-1782890638.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20-%20Beacon%2C%2014-16%20Phan%20%C4%90%C4%83ng%20L%C6%B0u%2C%20Gia%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam", "t": ["Pet-Friendly"] }, "10036": { "n": "Every Half Coffee Roasters Lê Đại Hành - Đà Lạt", "a": "19a Lê Đại Hành, Xuân Hương - Đà Lạt, Lâm Đồng", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10976-571531791123606-1791123606.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%2019a%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%2C%20Xu%C3%A2n%20H%C6%B0%C6%A1ng%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng", "t": ["Outdoor-Space", "Pet-Friendly"] } }, FEAT_TXT = { "10036": { "title": "Một buổi sáng chậm lại ở Lê Đại Hành, Đà Lạt", "lede": "Giữa phố đồi se lạnh, cửa hàng Every Half trên đường Lê Đại Hành là chỗ để dừng chân: một ly cà phê đặc sản, chút không khí trong lành và khoảng ngồi đủ thoáng để bạn không phải vội.", "sections": [["Không gian", "Mặt tiền nổi bật với biển chữ M dễ nhận ra từ xa. Bên trong, bố cục tối giản giữ cho tầm nhìn thông thoáng, còn khu ngồi ngoài trời cho bạn uống cà phê giữa không khí Đà Lạt thay vì chỉ nhìn nó qua cửa kính."], ["Nên thử gì", "Đà Lạt là nơi gần vùng trồng Arabica Cầu Đất nhất trong hệ thống, nên đây là dịp tốt để hỏi barista về dòng Arabica đang có và chọn cách pha hợp khẩu vị: pha phin nhẹ, pour over hoặc espresso."], ["Hợp với ai", "Du khách muốn bắt đầu ngày mới thật chậm, nhóm bạn đi cùng thú cưng, hoặc ai cần một chỗ ngồi yên tĩnh giữa lịch trình tham quan."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Ghé sớm sau 07:00 để ngồi ngoài trời khi trời còn mát và ít người." }, "10003": { "title": "Sân vườn xanh giữa Phú Mỹ Hưng: nơi làm việc và nghỉ ngơi trong một", "lede": "Nếu bạn đang tìm một quán cà phê đẹp ở Quận 7 để làm việc buổi sáng hoặc gặp bạn cuối tuần, cửa hàng Hưng Gia có thứ khó tìm trong nội thành: một khoảng sân vườn để ngồi.", "sections": [["Không gian", "Cửa hàng nằm trong khu nội khu yên tĩnh, tách khỏi nhịp xe cộ của đường lớn. Khu sân vườn đón nhiều ánh sáng tự nhiên, còn bên trong giữ phong cách tối giản đặc trưng của Every Half."], ["Nên thử gì", "Buổi sáng làm việc hợp với một ly cà phê lọc để uống chậm. Buổi chiều nóng, cold brew là lựa chọn dễ uống. Nếu thích vị đậm, hỏi barista về dòng Fine Robusta Đắk Lắk, dòng cà phê từng giành giải Vàng Global Coffee Awards."], ["Hợp với ai", "Người làm việc tự do cần chỗ yên tĩnh, nhóm bạn gặp nhau cuối tuần, và khách đi ô tô nhờ có chỗ đậu xe gần cửa hàng."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Khung giờ sáng các ngày trong tuần thường vắng hơn, phù hợp để làm việc." }, "10004": { "title": "Beacon Phan Đăng Lưu: nơi cà phê được rang ngay trước mắt bạn", "lede": "Hầu hết quán cà phê chỉ cho bạn thấy ly cà phê cuối cùng. Ở Beacon, bạn thấy cả đoạn đường phía trước nó: từ hạt xanh, mẻ rang đến tách cà phê trên quầy.", "sections": [["Không gian", "Khu xưởng rang (Roastery Lab) là điểm nhấn của cửa hàng. Quầy bar và khu rang nằm gần nhau, nên bạn có thể vừa ngồi uống vừa quan sát quy trình rang. Cách bài trí tối giản để mọi sự chú ý dồn vào cà phê."], ["Nên thử gì", "Hãy hỏi barista về mẻ rang mới trong ngày và chọn một ly pha tay để nếm rõ hương vị. Dòng Fine Robusta Đắk Lắk sơ chế Honey là lựa chọn thú vị cho người nghĩ Robusta chỉ có vị đắng."], ["Hợp với ai", "Người mới tìm hiểu cà phê đặc sản, dân mê cà phê muốn xem quy trình rang, hoặc bất kỳ ai muốn một chỗ hẹn có câu chuyện để kể. Cửa hàng có chỗ gửi xe máy miễn phí."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Nếu muốn hỏi sâu về quy trình rang, nên ghé ngoài giờ cao điểm." } };
+        const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+        let region = '0'; const on = new Set();
+        function apply() {
+            let n = 0; $$('.store').forEach(c => { const ok = (region === '0' || c.dataset.region === region) && [...on].every(k => c.dataset[k] === '1'); c.hidden = !ok; if (ok) n++ });
+            $('#count').textContent = 'Hiển thị ' + n + ' / 44 cửa hàng'; $('#empty').style.display = n ? 'none' : 'block'
+        }
+        $$('.tab').forEach(b => b.onclick = () => { region = b.dataset.region; $$('.tab').forEach(x => x.classList.toggle('on', x === b)); apply() });
+        $$('.chip').forEach(b => b.onclick = () => { const k = b.dataset.attr; on.has(k) ? on.delete(k) : on.add(k); b.classList.toggle('on'); apply() });
+        $$('[data-call]').forEach(a => { const p = PHONES[a.dataset.call]; if (p) { a.href = 'tel:' + p.replace(/\s/g, ''); a.removeAttribute('aria-disabled') } else a.title = 'Chưa có số điện thoại cho cửa hàng này' });
+        /* trạng thái Đang mở / Đã đóng theo giờ Việt Nam */
+        function status() {
+            const t = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh' })); const m = t.getHours() * 60 + t.getMinutes();
+            $$('.store').forEach(c => { const [a, b] = c.dataset.hours.split('-').map(x => x.trim().split(':').reduce((h, k) => h * 60 + +k)); const o = m >= a && m < b; const s = c.querySelector('.st'); s.textContent = o ? '• Đang mở cửa' : '• Đã đóng cửa'; s.className = 'st ' + (o ? 'o' : 'c') })
+        }
+        addEventListener('scroll', () => $('#hd').classList.toggle('scrolled', scrollY > 10), { passive: true });
+        status(); setInterval(status, 60000);
+        const dlg = $('#dlg');
+        $$('[data-album]').forEach(b => b.onclick = () => {
+            const id = b.dataset.album, d = FEAT_DATA[id];
+            const imgs = [d.i, ...(ALBUM_EXTRA[id] || [])]; $('#dp').innerHTML = imgs.map(u => '<img src="' + u + '" onerror="this.remove()" alt="">').join('');
+            const S = FEAT_TXT[id]; $('#dn').textContent = S.title; $('#ds').textContent = S.lede; $('#sb').innerHTML = S.sections.map(x => '<h4>' + x[0] + '</h4><p>' + x[1] + '</p>').join(''); $('#tp').textContent = S.tip; $('#dt').textContent = d.n; $('#da').textContent = d.a;
+            $('#dg').innerHTML = d.t.map(x => '<span class="tag">' + x + '</span>').join(''); $('#dm').href = d.m; dlg.showModal()
         });
+        $('#dx').onclick = $('#dx2').onclick = () => dlg.close(); dlg.onclick = e => { if (e.target === dlg) dlg.close() };
     </script>
-
-    <!-- MỚI: nội dung bài viết + logic mở hộp thoại "Xem không gian" -->
-    <script data-purpose="space-dialog">
-        const SPACES = {
-            dalat: {
-                title: 'Một buổi sáng chậm lại ở Lê Đại Hành, Đà Lạt',
-                lede: 'Giữa phố đồi se lạnh, cửa hàng Every Half trên đường Lê Đại Hành là chỗ để dừng chân: một ly cà phê đặc sản, chút không khí trong lành và khoảng ngồi đủ thoáng để bạn không phải vội.',
-                sections: [
-                    ['Không gian', 'Mặt tiền nổi bật với biển chữ M dễ nhận ra từ xa. Bên trong, bố cục tối giản giữ cho tầm nhìn thông thoáng, còn khu ngồi ngoài trời cho bạn uống cà phê giữa không khí Đà Lạt thay vì chỉ nhìn nó qua cửa kính.'],
-                    ['Nên thử gì', 'Đà Lạt là nơi gần vùng trồng Arabica Cầu Đất nhất trong hệ thống, nên đây là dịp tốt để hỏi barista về dòng Arabica đang có và chọn cách pha hợp khẩu vị: pha phin nhẹ, pour over hoặc espresso.'],
-                    ['Hợp với ai', 'Du khách muốn bắt đầu ngày mới thật chậm, nhóm bạn đi cùng thú cưng, hoặc ai cần một chỗ ngồi yên tĩnh giữa lịch trình tham quan.']
-                ],
-                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Ghé sớm sau 07:00 để ngồi ngoài trời khi trời còn mát và ít người.'
-            },
-            hunggia: {
-                title: 'Sân vườn xanh giữa Phú Mỹ Hưng: nơi làm việc và nghỉ ngơi trong một',
-                lede: 'Nếu bạn đang tìm một quán cà phê đẹp ở Quận 7 để làm việc buổi sáng hoặc gặp bạn cuối tuần, cửa hàng Hưng Gia có thứ khó tìm trong nội thành: một khoảng sân vườn để ngồi.',
-                sections: [
-                    ['Không gian', 'Cửa hàng nằm trong khu nội khu yên tĩnh, tách khỏi nhịp xe cộ của đường lớn. Khu sân vườn đón nhiều ánh sáng tự nhiên, còn bên trong giữ phong cách tối giản đặc trưng của Every Half.'],
-                    ['Nên thử gì', 'Buổi sáng làm việc hợp với một ly cà phê lọc để uống chậm. Buổi chiều nóng, cold brew là lựa chọn dễ uống. Nếu thích vị đậm, hỏi barista về dòng Fine Robusta Đắk Lắk, dòng cà phê từng giành giải Vàng Global Coffee Awards.'],
-                    ['Hợp với ai', 'Người làm việc tự do cần chỗ yên tĩnh, nhóm bạn gặp nhau cuối tuần, và khách đi ô tô nhờ có chỗ đậu xe gần cửa hàng.']
-                ],
-                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Khung giờ sáng các ngày trong tuần thường vắng hơn, phù hợp để làm việc.'
-            },
-            beacon: {
-                title: 'Beacon Phan Đăng Lưu: nơi cà phê được rang ngay trước mắt bạn',
-                lede: 'Hầu hết quán cà phê chỉ cho bạn thấy ly cà phê cuối cùng. Ở Beacon, bạn thấy cả đoạn đường phía trước nó: từ hạt xanh, mẻ rang đến tách cà phê trên quầy.',
-                sections: [
-                    ['Không gian', 'Khu xưởng rang (Roastery Lab) là điểm nhấn của cửa hàng. Quầy bar và khu rang nằm gần nhau, nên bạn có thể vừa ngồi uống vừa quan sát quy trình rang. Cách bài trí tối giản để mọi sự chú ý dồn vào cà phê.'],
-                    ['Nên thử gì', 'Hãy hỏi barista về mẻ rang mới trong ngày và chọn một ly pha tay để nếm rõ hương vị. Dòng Fine Robusta Đắk Lắk sơ chế Honey là lựa chọn thú vị cho người nghĩ Robusta chỉ có vị đắng.'],
-                    ['Hợp với ai', 'Người mới tìm hiểu cà phê đặc sản, dân mê cà phê muốn xem quy trình rang, hoặc bất kỳ ai muốn một chỗ hẹn có câu chuyện để kể. Cửa hàng có chỗ gửi xe máy miễn phí.']
-                ],
-                tip: 'Mở cửa 07:00–21:30 mỗi ngày. Nếu muốn hỏi sâu về quy trình rang, nên ghé ngoài giờ cao điểm.'
-            }
-        };
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const dlg = document.getElementById('space-dialog');
-            const $ = id => document.getElementById(id);
-
-            document.querySelectorAll('button[data-store]').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const data = SPACES[btn.dataset.store];
-                    const card = document.getElementById(btn.dataset.card);
-                    // Lấy lại ảnh, tên, địa chỉ, tag và link chỉ đường từ chính thẻ cửa hàng
-                    const img = card.querySelector('img');
-                    $('sd-img').src = img.src; $('sd-img').alt = img.alt;
-                    $('sd-store').textContent = card.querySelector('h3').textContent.trim();
-                    $('sd-title').textContent = data.title;
-                    $('sd-lede').textContent = data.lede;
-                    $('sd-body').innerHTML = data.sections.map(([h, p]) =>
-                        '<div><h4 class="font-space font-bold text-sm">' + h + '</h4><p class="text-xs text-brand-gray leading-relaxed mt-0.5">' + p + '</p></div>').join('');
-                    $('sd-tip').textContent = data.tip;
-                    $('sd-tags').innerHTML = [...card.querySelectorAll('span.bg-brand-lightGray')].map(s =>
-                        '<span class="bg-brand-lightGray text-[10px] font-mono px-2 py-0.5 text-neutral-700 tracking-wide">' + s.textContent.trim() + '</span>').join('');
-                    $('sd-addr').textContent = 'Địa chỉ: ' + card.querySelector('p.text-xs').textContent.trim();
-                    $('sd-map').href = card.querySelector('a[target="_blank"]').href;
-                    dlg.showModal();
-                    dlg.scrollTop = 0;
-                });
-            });
-
-            $('sd-close').addEventListener('click', () => dlg.close());
-            $('sd-close-x').addEventListener('click', () => dlg.close());
-            dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
-        });
-    </script>
-    <!-- END: InteractiveScripts -->
-
 </body>
 
 </html>
