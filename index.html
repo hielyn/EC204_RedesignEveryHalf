@@ -500,6 +500,97 @@
             display: block
         }
 
+        dialog.has-gallery {
+            max-width: 960px
+        }
+
+        .album-gallery {
+            background: #171717;
+            color: #fff
+        }
+
+        .gallery-stage {
+            position: relative;
+            display: grid;
+            place-items: center;
+            height: min(58vh, 560px);
+            min-height: 260px;
+            padding: 18px 68px
+        }
+
+        .gallery-stage img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain
+        }
+
+        .gallery-count {
+            position: absolute;
+            right: 16px;
+            bottom: 14px;
+            padding: 5px 9px;
+            background: rgba(0, 0, 0, .65);
+            font: 500 12px 'SUSE Mono', monospace
+        }
+
+        .gallery-arrow {
+            position: absolute;
+            top: 50%;
+            display: grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255, 255, 255, .6);
+            border-radius: 50%;
+            background: rgba(0, 0, 0, .55);
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            transform: translateY(-50%)
+        }
+
+        .gallery-arrow:hover {
+            background: rgba(0, 0, 0, .85)
+        }
+
+        .gallery-arrow.prev {
+            left: 14px
+        }
+
+        .gallery-arrow.next {
+            right: 14px
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding: 12px 16px 16px
+        }
+
+        .gallery-thumb {
+            flex: 0 0 88px;
+            height: 62px;
+            padding: 0;
+            border: 2px solid transparent;
+            background: #333;
+            cursor: pointer;
+            opacity: .65
+        }
+
+        .gallery-thumb[aria-current="true"] {
+            border-color: #fff;
+            opacity: 1
+        }
+
+        .gallery-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
         .dl .lede {
             font-size: 14px;
             line-height: 24px;
@@ -638,6 +729,25 @@
 
             .filters {
                 top: 68px
+            }
+
+            .gallery-stage {
+                height: 48vh;
+                min-height: 220px;
+                padding: 14px 52px
+            }
+
+            .gallery-arrow {
+                width: 36px;
+                height: 36px
+            }
+
+            .gallery-arrow.prev {
+                left: 8px
+            }
+
+            .gallery-arrow.next {
+                right: 8px
             }
         }
     </style>
@@ -1550,7 +1660,7 @@
         /* Số điện thoại từng cửa hàng: dữ liệu gốc CHƯA có. Điền theo mẫu { "10036": "0900000000" } để nút "Gọi cửa hàng" hoạt động. */
         const PHONES = {};
         /* Ảnh bổ sung cho album từng chi nhánh nổi bật (đường dẫn ảnh của nhóm), ví dụ { "10036": ["images/dalat-2.jpg"] } */
-        const ALBUM_EXTRA = {};
+        const ALBUM_EXTRA = { "10036": ["dalat/everyhalf-dalat-1.jpg", "dalat/everyhalf-dalat-2.jpg", "dalat/everyhalf-dalat-3.jpg", "dalat/everyhalf-dalat-4.jpg"] };
         const FEAT_DATA = { "10003": { "n": "Every Half Coffee Roasters - Hưng Gia", "a": "48 Đ. Nội Khu Hưng Gia 4, II, Tân Hưng, Hồ Chí Minh, Vietnam", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10350-830481782890683-1782890683.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20-%20H%C6%B0ng%20Gia%2C%2048%20%C4%90.%20N%E1%BB%99i%20Khu%20H%C6%B0ng%20Gia%204%2C%20II%2C%20T%C3%A2n%20H%C6%B0ng%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam", "t": ["Pet-Friendly"] }, "10004": { "n": "Every Half Coffee Roasters - Beacon", "a": "14-16 Phan Đăng Lưu, Gia Định, Hồ Chí Minh, Vietnam", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/July/10348-231061782890638-1782890638.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20-%20Beacon%2C%2014-16%20Phan%20%C4%90%C4%83ng%20L%C6%B0u%2C%20Gia%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam", "t": ["Pet-Friendly"] }, "10036": { "n": "Every Half Coffee Roasters Lê Đại Hành - Đà Lạt", "a": "19a Lê Đại Hành, Xuân Hương - Đà Lạt, Lâm Đồng", "i": "https://thumbnail.everyhalf.vn/_/rs:fill:600:375:1/plain/https://assets.everyhalf.vn/uploads/filecloud/11000/2026/October/10976-571531791123606-1791123606.jpg", "m": "https://www.google.com/maps/search/?api=1&query=Every%20Half%20Coffee%20Roasters%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%2019a%20L%C3%AA%20%C4%90%E1%BA%A1i%20H%C3%A0nh%2C%20Xu%C3%A2n%20H%C6%B0%C6%A1ng%20-%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng", "t": ["Outdoor-Space", "Pet-Friendly"] } }, FEAT_TXT = { "10036": { "title": "Một buổi sáng chậm lại ở Lê Đại Hành, Đà Lạt", "lede": "Giữa phố đồi se lạnh, cửa hàng Every Half trên đường Lê Đại Hành là chỗ để dừng chân: một ly cà phê đặc sản, chút không khí trong lành và khoảng ngồi đủ thoáng để bạn không phải vội.", "sections": [["Không gian", "Mặt tiền nổi bật với biển chữ M dễ nhận ra từ xa. Bên trong, bố cục tối giản giữ cho tầm nhìn thông thoáng, còn khu ngồi ngoài trời cho bạn uống cà phê giữa không khí Đà Lạt thay vì chỉ nhìn nó qua cửa kính."], ["Nên thử gì", "Đà Lạt là nơi gần vùng trồng Arabica Cầu Đất nhất trong hệ thống, nên đây là dịp tốt để hỏi barista về dòng Arabica đang có và chọn cách pha hợp khẩu vị: pha phin nhẹ, pour over hoặc espresso."], ["Hợp với ai", "Du khách muốn bắt đầu ngày mới thật chậm, nhóm bạn đi cùng thú cưng, hoặc ai cần một chỗ ngồi yên tĩnh giữa lịch trình tham quan."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Ghé sớm sau 07:00 để ngồi ngoài trời khi trời còn mát và ít người." }, "10003": { "title": "Sân vườn xanh giữa Phú Mỹ Hưng: nơi làm việc và nghỉ ngơi trong một", "lede": "Nếu bạn đang tìm một quán cà phê đẹp ở Quận 7 để làm việc buổi sáng hoặc gặp bạn cuối tuần, cửa hàng Hưng Gia có thứ khó tìm trong nội thành: một khoảng sân vườn để ngồi.", "sections": [["Không gian", "Cửa hàng nằm trong khu nội khu yên tĩnh, tách khỏi nhịp xe cộ của đường lớn. Khu sân vườn đón nhiều ánh sáng tự nhiên, còn bên trong giữ phong cách tối giản đặc trưng của Every Half."], ["Nên thử gì", "Buổi sáng làm việc hợp với một ly cà phê lọc để uống chậm. Buổi chiều nóng, cold brew là lựa chọn dễ uống. Nếu thích vị đậm, hỏi barista về dòng Fine Robusta Đắk Lắk, dòng cà phê từng giành giải Vàng Global Coffee Awards."], ["Hợp với ai", "Người làm việc tự do cần chỗ yên tĩnh, nhóm bạn gặp nhau cuối tuần, và khách đi ô tô nhờ có chỗ đậu xe gần cửa hàng."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Khung giờ sáng các ngày trong tuần thường vắng hơn, phù hợp để làm việc." }, "10004": { "title": "Beacon Phan Đăng Lưu: nơi cà phê được rang ngay trước mắt bạn", "lede": "Hầu hết quán cà phê chỉ cho bạn thấy ly cà phê cuối cùng. Ở Beacon, bạn thấy cả đoạn đường phía trước nó: từ hạt xanh, mẻ rang đến tách cà phê trên quầy.", "sections": [["Không gian", "Khu xưởng rang (Roastery Lab) là điểm nhấn của cửa hàng. Quầy bar và khu rang nằm gần nhau, nên bạn có thể vừa ngồi uống vừa quan sát quy trình rang. Cách bài trí tối giản để mọi sự chú ý dồn vào cà phê."], ["Nên thử gì", "Hãy hỏi barista về mẻ rang mới trong ngày và chọn một ly pha tay để nếm rõ hương vị. Dòng Fine Robusta Đắk Lắk sơ chế Honey là lựa chọn thú vị cho người nghĩ Robusta chỉ có vị đắng."], ["Hợp với ai", "Người mới tìm hiểu cà phê đặc sản, dân mê cà phê muốn xem quy trình rang, hoặc bất kỳ ai muốn một chỗ hẹn có câu chuyện để kể. Cửa hàng có chỗ gửi xe máy miễn phí."]], "tip": "Mở cửa 07:00–21:30 mỗi ngày. Nếu muốn hỏi sâu về quy trình rang, nên ghé ngoài giờ cao điểm." } };
         const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
         let region = '0'; const on = new Set();
@@ -1571,7 +1681,25 @@
         const dlg = $('#dlg');
         $$('[data-album]').forEach(b => b.onclick = () => {
             const id = b.dataset.album, d = FEAT_DATA[id];
-            const imgs = [d.i, ...(ALBUM_EXTRA[id] || [])]; $('#dp').innerHTML = imgs.map(u => '<img src="' + u + '" onerror="this.remove()" alt="">').join('');
+            const imgs = [d.i, ...(ALBUM_EXTRA[id] || [])];
+            dlg.classList.toggle('has-gallery', id === '10036');
+            if (id === '10036') {
+                $('#dp').innerHTML = '<div class="album-gallery"><div class="gallery-stage"><button class="gallery-arrow prev" type="button" aria-label="Ảnh trước">‹</button><img id="gallery-main" alt="Không gian Every Half Đà Lạt"><span class="gallery-count" id="gallery-count"></span><button class="gallery-arrow next" type="button" aria-label="Ảnh tiếp theo">›</button></div><div class="gallery-thumbs" id="gallery-thumbs"></div></div>';
+                let activeImage = 0;
+                const showImage = index => {
+                    activeImage = (index + imgs.length) % imgs.length;
+                    $('#gallery-main').src = imgs[activeImage];
+                    $('#gallery-count').textContent = (activeImage + 1) + ' / ' + imgs.length;
+                    $$('.gallery-thumb').forEach((thumb, thumbIndex) => thumb.setAttribute('aria-current', thumbIndex === activeImage ? 'true' : 'false'));
+                };
+                $('#gallery-thumbs').innerHTML = imgs.map((src, index) => '<button class="gallery-thumb" type="button" aria-label="Xem ảnh ' + (index + 1) + '" aria-current="false"><img src="' + src + '" alt=""></button>').join('');
+                $$('.gallery-thumb').forEach((thumb, index) => thumb.onclick = () => showImage(index));
+                $('.gallery-arrow.prev').onclick = () => showImage(activeImage - 1);
+                $('.gallery-arrow.next').onclick = () => showImage(activeImage + 1);
+                showImage(0);
+            } else {
+                $('#dp').innerHTML = imgs.map(u => '<img src="' + u + '" onerror="this.remove()" alt="">').join('');
+            }
             const S = FEAT_TXT[id]; $('#dn').textContent = S.title; $('#ds').textContent = S.lede; $('#sb').innerHTML = S.sections.map(x => '<h4>' + x[0] + '</h4><p>' + x[1] + '</p>').join(''); $('#tp').textContent = S.tip; $('#dt').textContent = d.n; $('#da').textContent = d.a;
             $('#dg').innerHTML = d.t.map(x => '<span class="tag">' + x + '</span>').join(''); $('#dm').href = d.m; dlg.showModal()
         });
