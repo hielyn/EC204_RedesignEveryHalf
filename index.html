@@ -280,8 +280,21 @@
         .stories {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 48px;
+            gap: 0 48px;
             margin-bottom: 96px
+        }
+
+        /* Subgrid: ảnh, tiêu đề, mô tả, tag, nút của các thẻ cùng hàng căn thẳng nhau */
+        .story {
+            display: grid;
+            grid-row: span 5;
+            grid-template-rows: subgrid;
+            row-gap: 0
+        }
+
+        .story .tags {
+            align-content: flex-start;
+            align-items: flex-start
         }
 
         .story h3 {
@@ -298,7 +311,9 @@
 
         .story .btn {
             margin-top: 10px;
-            width: auto
+            width: auto;
+            justify-self: start;
+            align-self: start
         }
 
         .ph {
@@ -335,12 +350,32 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 72px 56px;
-            margin-bottom: 120px
+            gap: 0 56px;
+            margin-bottom: 48px
         }
 
         .store {
+            display: grid;
+            grid-row: span 6;
+            grid-template-rows: subgrid;
+            row-gap: 0;
             transition: opacity .3s
+        }
+
+        /* thẻ không có tag vẫn giữ hàng tag để các hàng bên dưới thẳng nhau */
+        .store .tags:empty {
+            display: block
+        }
+
+        .store .tags {
+            align-content: flex-start;
+            align-items: flex-start
+        }
+
+        /* khoảng cách giữa các hàng thẻ */
+        .store .cta {
+            align-self: start;
+            margin-bottom: 72px
         }
 
         .store[hidden] {
@@ -699,12 +734,20 @@
             }
 
             .grid {
-                gap: 56px
+                gap: 0
             }
 
             .stories {
-                gap: 40px;
+                gap: 0;
                 margin-bottom: 64px
+            }
+
+            .story .btn {
+                margin-bottom: 40px
+            }
+
+            .store .cta {
+                margin-bottom: 56px
             }
 
             .stories {
